@@ -11,7 +11,7 @@ class Navbar extends Component {
     return (
       <nav className="navbar-container">
         <div className="navbar-left">
-          <Link className="navbar-brand" to="/"><img src={logo} alt='logo'></img></Link>
+          <Link className="navbar-brand" to="/"><img src={logo} alt='logso'></img></Link>
           </div>
           <div className='navbar-mid'>
           <ul className="navbar-list">
