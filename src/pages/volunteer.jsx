@@ -5,26 +5,41 @@ import volunteer_head from './assets/head.png';
 
 
 class Volunteer extends Component {
-  state = {
-    emailid: '',
-    fullName: '',
-    role: 'volunteer',
-    gender: '',
-    dateOfBirth: '',
-    contactNo: '',
-    address: '',
-    agreed: 'Yes'
-  };
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      fullName: '',
+      role: 'volunteer',
+      gender: '',
+      dateOfBirth: '',
+      contactNo: '',
+      address: '',
+      agreed: '',
+    };
+  }
 
   handleSubmit = async (e) => {
     e.preventDefault();
 
-    const { agreed, ...formData } = this.state;
+    const { agreed, fullName, role, gender, dateOfBirth, contactNo, address } =
+      this.state;
 
     if (agreed !== 'Yes') {
       alert('Please agree to the declaration before submitting.');
       return;
     }
+
+    const formData = {
+      joinheedsfoundation: role,
+      email: '',
+      fullname: fullName,
+      gender: gender,
+      dob: dateOfBirth,
+      contact: contactNo,
+      address: address,
+      submit: 'Yes',
+    };
 
     try {
       const response = await axios.post(
@@ -35,14 +50,13 @@ class Volunteer extends Component {
       if (response.status === 201) {
         alert('Registration submitted successfully!');
         this.setState({
-          emailid: '',
           fullName: '',
           role: 'volunteer',
           gender: '',
           dateOfBirth: '',
           contactNo: '',
           address: '',
-          agreed: 'Yes'
+          agreed: 'Yes',
         });
       } else {
         alert('Registration submission failed. Please try again.');
@@ -53,16 +67,20 @@ class Volunteer extends Component {
     }
   };
 
+  handleInputChange = (e) => {
+    const { name, value } = e.target;
+    this.setState({ [name]: value });
+  };
+
   render() {
     const {
-      emailid,
       fullName,
       role,
       gender,
       dateOfBirth,
       contactNo,
       address,
-      agreed
+      agreed,
     } = this.state;
 
     return (
@@ -81,87 +99,87 @@ class Volunteer extends Component {
             </ul>
           </div>
           <label className="role">Join as:</label>
+        <select
+          id="role"
+          name="role"
+          value={role}
+          onChange={this.handleInputChange}
+        >
+          <option value="volunteer">Volunteer</option>
+          <option value="donor">Donor</option>
+        </select>
+
+        <label className="fullName">Full Name:</label>
+        <input
+          type="text"
+          id="fullName"
+          name="fullName"
+          value={fullName}
+          onChange={this.handleInputChange}
+          required
+        />
+
+        <label className="gender">Gender:</label>
+        <select
+          id="gender"
+          name="gender"
+          value={gender}
+          onChange={this.handleInputChange}
+        >
+          <option value="">Select Gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select>
+
+        <label className="dateOfBirth">Date of Birth:</label>
+        <input
+          type="text"
+          id="dateOfBirth"
+          name="dateOfBirth"
+          value={dateOfBirth}
+          onChange={this.handleInputChange}
+          required
+        />
+
+        <label className="contactNo">Contact No:</label>
+        <input
+          type="tel"
+          id="contactNo"
+          name="contactNo"
+          value={contactNo}
+          onChange={this.handleInputChange}
+          required
+        />
+
+        <label className="address">Address:</label>
+        <textarea
+          id="address"
+          name="address"
+          value={address}
+          onChange={this.handleInputChange}
+          required
+        ></textarea>
+
+        <div className="declaration">
+          <label className="agreed">
+            I agree to follow the Heeds Foundation core principles and I
+            understand that any personal risk during the process will be borne
+            by me and the Heeds Foundation is not liable.
+          </label>
           <select
-            id="role"
-            value={role}
-            onChange={(e) => this.setState({ role: e.target.value })}
+            id="agreed"
+            name="agreed"
+            value={agreed}
+            onChange={this.handleInputChange}
+            required
           >
-            <option value="volunteer">Volunteer</option>
-            <option value="donor">Donor</option>
+            <option value="">Select</option>
+            <option value="Yes">Yes</option>
           </select>
-          <label className="emailid">Email ID:</label>
-          <input
-            type="text"
-            id="emailid"
-            value={emailid}
-            onChange={(e) => this.setState({ emailid: e.target.value })}
-            required
-          />
-          <label className="fullName">Full Name:</label>
-          <input
-            type="text"
-            id="fullName"
-            value={fullName}
-            onChange={(e) => this.setState({ fullName: e.target.value })}
-            required
-          />
+        </div>
 
-          <label className="gender">Gender:</label>
-          <select
-            id="gender"
-            value={gender}
-            onChange={(e) => this.setState({ gender: e.target.value })}
-          >
-            <option value="">Select Gender</option>
-            <option value="Male">Male</option>
-            <option value="Female">Female</option>
-            <option value="Other">Other</option>
-          </select>
-
-          <label className="dateOfBirth">Date of Birth:</label>
-          <input
-            type="text"
-            id="dateOfBirth"
-            value={dateOfBirth}
-            onChange={(e) => this.setState({ dateOfBirth: e.target.value })}
-            required
-          />
-
-          <label className="contactNo">Contact No:</label>
-          <input
-            type="tel"
-            id="contactNo"
-            value={contactNo}
-            onChange={(e) => this.setState({ contactNo: e.target.value })}
-            required
-          />
-
-          <label className="address">Address:</label>
-          <textarea
-            id="address"
-            value={address}
-            onChange={(e) => this.setState({ address: e.target.value })}
-            required
-          ></textarea>
-
-          <div className="declaration">
-            <label className="agreed">
-              I agree to follow the Heeds Foundation core principles and I understand
-              that any personal risk during the process will be borne by me and the
-              Heeds Foundation is not liable.
-            </label>
-            <select
-              id="agreed"
-              value={agreed}
-              onChange={(e) => this.setState({ agreed: e.target.value })}
-              required
-            >
-              <option value="">Select</option>
-              <option value="Yes">Yes</option>
-            </select>
-          </div>
-
-          <button type="submit">Submit</button>
+        <button type="submit">Submit</button>
         </form>
       </div>
     );

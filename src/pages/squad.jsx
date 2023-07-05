@@ -16,8 +16,8 @@ class Squads extends Component {
         </div>
         <div className="circle-buttons">
         <Link className="circle-button-1" to="/"></Link>
-          <a href="/" className="circle-button-2">  </a>
-          <a href="/" className="circle-button-3">  </a>
+        <Link className="circle-button-2" to="/members"></Link>
+        <Link className="circle-button-3" to="/"></Link>
         </div>
         <br></br>
       </div>
