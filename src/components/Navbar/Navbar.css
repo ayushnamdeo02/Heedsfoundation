@@ -1,0 +1,88 @@
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
+}
+.navbar-container .navbar-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar-container .navbar-left .navbar-brand img {
+  width: 250px;
+  height: auto;
+}
+.navbar-container .navbar-mid {
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: center;
+}
+.navbar-container .navbar-mid .navbar-list {
+  list-style: none;
+  display: flex;
+}
+.navbar-container .navbar-mid .navbar-list .nav-item {
+  margin-right: 10px;
+}
+.navbar-container .navbar-mid .navbar-list .nav-item .nav-link {
+  text-decoration: none;
+  color: #333;
+}
+.navbar-container .navbar-mid .navbar-list .nav-item .nav-link.active {
+  font-weight: bold;
+  color: red;
+}
+.navbar-container .navbar-mid {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: center;
+}
+.navbar-container .navbar-mid .navbar-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.navbar-container .navbar-mid .navbar-list .nav-item {
+  margin-right: 10px;
+  justify-content: center;
+}
+.navbar-container .navbar-mid .navbar-list .nav-item .nav-link {
+  text-decoration: none;
+  color: #333;
+}
+.navbar-container .navbar-mid .navbar-list .nav-item .nav-link.active {
+  font-weight: bold;
+  color: red;
+}
+.navbar-container .navbar-right {
+  display: flex;
+  align-items: center;
+}
+.navbar-container .navbar-right .social-media-button {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.navbar-container .navbar-right .social-media-button li {
+  margin-right: 10px;
+}
+.navbar-container .navbar-right .social-media-button li a {
+  text-decoration: none;
+}
+.navbar-container .navbar-right .social-media-button li a.linkedin img {
+  width: 30px;
+  height: 30px;
+}
+.navbar-container .navbar-right .social-media-button li a.instagram img {
+  width: 30px;
+  height: 30px;
+}
+.navbar-container .navbar-right .social-media-button li a.twitter img {
+  width: 30px;
+  height: 30px;
+}/*# sourceMappingURL=Navbar.css.map */

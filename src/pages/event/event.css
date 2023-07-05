@@ -1,0 +1,100 @@
+.event-container img {
+  max-width: 100%;
+  position: relative;
+  max-height: 500px;
+}
+.event-container .title {
+  position: relative;
+  margin-top: -350px;
+  color: white;
+  font-size: 80px;
+  width: 700;
+  text-align: center;
+}
+.event-container .info-event {
+  position: relative;
+  margin-left: 250px;
+  margin-right: 250px;
+  margin-top: 50px;
+  background-color: white;
+  padding-bottom: 20px;
+}
+.event-container .info-event p {
+  font-size: 20px;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 20px;
+  margin-top: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+.event-container .events {
+  position: relative;
+  border-radius: 10px;
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  margin-top: 50px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 120px;
+}
+.event-container .events .event {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.event-container .events .event img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.event-container .events .event .event-details {
+  text-align: center;
+}
+.event-container .events .event .event-details .event-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.event-container .events .event .event-details .event-description {
+  font-size: 14px;
+  color: white;
+}
+
+@media (max-width: 480px) {
+  .event-container {
+    display: contents;
+  }
+  .event-container .title {
+    font-size: 30px;
+  }
+  .event-container .events {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    margin-top: 10px;
+  }
+  .event-container .events .event {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .event-container .events .event .event-details {
+    text-align: center;
+  }
+  .event-container .events .event .event-details .event-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  .event-container .events .event .event-details .event-description {
+    font-size: 14px;
+    color: white;
+  }
+}/*# sourceMappingURL=event.css.map */

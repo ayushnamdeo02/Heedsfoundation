@@ -1,0 +1,130 @@
+.volunteer-container {
+  align-items: center;
+}
+.volunteer-container .head img {
+  width: 100%;
+  position: relative;
+}
+.volunteer-container .title-volunteer {
+  position: absolute;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  margin-top: -400px;
+  margin-left: 480px;
+  color: white;
+}
+.volunteer-container .volunteer-form {
+  margin-top: -280px;
+  margin-left: 300px;
+  margin-bottom: 120px;
+  position: relative;
+  background-color: white;
+  width: 950px;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  padding-top: 15px;
+  padding-left: 35px;
+  padding-bottom: 25px;
+  padding-right: 35px;
+}
+.volunteer-container .volunteer-form .info-volunteer {
+  text-align: center;
+}
+.volunteer-container .volunteer-form .info-volunteer .info-title {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.volunteer-container .volunteer-form .info-volunteer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-size: 19px;
+  margin-bottom: 50px;
+}
+.volunteer-container .volunteer-form .info-volunteer ul li {
+  float: left;
+}
+.volunteer-container .volunteer-form .info-volunteer ul li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.volunteer-container .volunteer-form .role {
+  margin-left: 5px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.volunteer-container .volunteer-form .emailid {
+  margin-left: 5px;
+  font-size: 17px;
+  font-weight: 700;
+}
+.volunteer-container .volunteer-form .fullName {
+  margin-left: 5px;
+  font-size: 17px;
+  font-weight: 700;
+}
+.volunteer-container .volunteer-form .gender {
+  margin-left: 5px;
+  font-size: 17px;
+  font-weight: 700;
+}
+.volunteer-container .volunteer-form .dateOfBirth {
+  margin-left: 5px;
+  font-size: 17px;
+  font-weight: 700;
+}
+.volunteer-container .volunteer-form .contactNo {
+  margin-left: 5px;
+  font-size: 17px;
+  font-weight: 700;
+}
+.volunteer-container .volunteer-form .address {
+  margin-left: 5px;
+  font-size: 17px;
+  font-weight: 700;
+}
+.volunteer-container .volunteer-form label {
+  display: block;
+  margin-top: 10px;
+}
+.volunteer-container .volunteer-form select,
+.volunteer-container .volunteer-form input[type=text],
+.volunteer-container .volunteer-form input[type=tel],
+.volunteer-container .volunteer-form textarea {
+  margin-top: 5px;
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.volunteer-container .volunteer-form textarea {
+  height: 100px;
+}
+.volunteer-container .volunteer-form .declaration {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+.volunteer-container .volunteer-form .declaration input[type=checkbox] {
+  margin-right: 5px;
+}
+.volunteer-container .volunteer-form button[type=submit] {
+  float: right;
+  width: 200px;
+  align-items: flex-end;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}/*# sourceMappingURL=Volunteer.css.map */

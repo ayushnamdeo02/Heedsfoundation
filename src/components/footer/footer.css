@@ -1,0 +1,21 @@
+.footer-container {
+  font-size: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-container .left-col {
+  display: flex;
+  align-items: center;
+}
+.footer-container .left-col ul {
+  display: flex;
+  gap: 20px;
+}
+.footer-container .right-col {
+  align-items: end;
+}
+.footer-container .right-col p {
+  color: rgb(34, 34, 34);
+}/*# sourceMappingURL=footer.css.map */

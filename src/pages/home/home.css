@@ -1,0 +1,58 @@
+.container-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.container-home .slider {
+  width: 100%;
+  height: 650px;
+  overflow: hidden;
+  position: relative;
+}
+.container-home .slider .slide {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 0.5s ease, transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+.container-home .slider .slide.active {
+  opacity: 1;
+  transform: translateX(0%);
+}
+.container-home .prev-button {
+  border: dashed;
+  background: none;
+  padding: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+  transition: color 0.3s ease;
+}
+.container-home .next-button {
+  border: dashed;
+  background: none;
+  padding: 5px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+  transition: color 0.3s ease;
+}
+.container-home .prev-button {
+  position: absolute;
+  top: 95%;
+  left: 20px;
+  transform: translateY(-50%);
+}
+.container-home .next-button {
+  position: absolute;
+  top: 95%;
+  right: 20px;
+  transform: translateY(-50%);
+}/*# sourceMappingURL=home.css.map */

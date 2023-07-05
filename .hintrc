@@ -1,0 +1,18 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "apple-touch-icons": "off",
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "max-height: fit-content",
+          "max-width: fit-content",
+          "text-justify"
+        ]
+      }
+    ]
+  }
+}

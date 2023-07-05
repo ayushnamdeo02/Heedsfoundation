@@ -1,0 +1,82 @@
+.container-contact {
+  display: grid;
+}
+.container-contact .container-title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+}
+.container-contact .partition-contact {
+  background-color: #f7f7f7;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.container-contact .partition-contact .partition-left {
+  background-color: white;
+  width: 500px;
+}
+.container-contact .partition-contact .partition-left img {
+  margin-top: 50px;
+  margin-left: 50px;
+  width: 200px;
+}
+.container-contact .partition-contact .partition-left .contact-info {
+  margin-top: 15px;
+  margin-left: 60px;
+}
+.container-contact .partition-contact .partition-left .contact-info h3 {
+  font-weight: 600;
+}
+.container-contact .partition-contact .partition-left .contact-info p {
+  font-size: 15px;
+  font-weight: 700;
+}
+.container-contact .partition-contact .partition-left .contact-info .social-media-button-contact {
+  display: flex;
+  margin-top: -50px;
+  margin-left: -50px;
+  gap: 10px;
+}
+.container-contact .partition-contact .partition-left .contact-info .social-media-button-contact li {
+  width: 40px;
+  height: 40px;
+}
+.container-contact .partition-contact .partition-left .contact-info .social-media-button-contact li img {
+  width: 40px;
+}
+.container-contact .partition-contact .partition-right .contact-form form {
+  display: flex;
+  flex-direction: column;
+  padding: 2vw 4vw;
+  max-width: 600px;
+  border-radius: 10px;
+}
+.container-contact .partition-contact .partition-right .contact-form form h3 {
+  color: #000000;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.container-contact .partition-contact .partition-right .contact-form form input,
+.container-contact .partition-contact .partition-right .contact-form form textarea {
+  border: 0;
+  border-radius: 50px;
+  margin: 10px;
+  padding: 20px;
+  outline: none;
+  background: white;
+  font-size: 16px;
+}
+.container-contact .partition-contact .partition-right .contact-form form button {
+  padding: 15px;
+  background: #4caf50;
+  color: black;
+  font-weight: 700;
+  font-size: 18px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  width: 150px;
+  margin: 20px auto 0;
+  border-radius: 30px;
+}/*# sourceMappingURL=contact.css.map */

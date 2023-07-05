@@ -1,0 +1,131 @@
+.squad-page {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.squad-page img {
+  display: block;
+  max-width: 100%;
+  max-height: 500px;
+  position: relative;
+}
+.squad-page .page-title {
+  position: relative;
+  text-align: center;
+  font-size: 80px;
+  font-weight: 700;
+  margin-top: -300px;
+  margin-bottom: 70px;
+  color: white;
+}
+.squad-page .squad-container {
+  background-color: white;
+  position: relative;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+.squad-page .squad-container p {
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  padding-top: 20px;
+  text-align: center;
+}
+.squad-page .circle-buttons {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.squad-page .circle-buttons .circle-button-1 {
+  display: flex;
+  flex-direction: column;
+  filter: blur(1px);
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background-image: url("./image1.png");
+  margin: 0 35px;
+  text-decoration: none;
+  position: relative; /* Add position relative */
+}
+.squad-page .circle-buttons .circle-button-1 .circle-button-label {
+  color: white;
+  font-size: 30px;
+  margin-top: 10px;
+  position: relative; /* Add position relative */
+  z-index: 1; /* Add z-index to bring the text in front */
+}
+.squad-page .circle-buttons .circle-button-2 {
+  display: flex;
+  flex-direction: column;
+  filter: blur(1px);
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background-image: url("./image2.png");
+  margin: 0 35px;
+  text-decoration: none;
+  position: relative; /* Add position relative */
+}
+.squad-page .circle-buttons .circle-button-2 .circle-button-label {
+  color: white;
+  font-size: 30px;
+  margin-top: 10px;
+  position: relative; /* Add position relative */
+  z-index: 1; /* Add z-index to bring the text in front */
+}
+.squad-page .circle-buttons .circle-button-3 {
+  display: flex;
+  flex-direction: column;
+  filter: blur(1px);
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background-image: url("./image3.png");
+  margin: 0 35px;
+  text-decoration: none;
+  position: relative; /* Add position relative */
+}
+.squad-page .circle-buttons .circle-button-3 .circle-button-label {
+  color: white;
+  font-size: 30px;
+  margin-top: 10px;
+  position: relative; /* Add position relative */
+  z-index: 1; /* Add z-index to bring the text in front */
+}
+
+@media (max-width: 480px) {
+  .squad-page {
+    display: contents;
+  }
+  .squad-page .page-title {
+    margin-top: 40px;
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .squad-page .circle-buttons {
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+    flex-direction: column;
+  }
+  .squad-page .circle-buttons .circle-button-1 {
+    width: 300px;
+    height: 300px;
+  }
+  .squad-page .circle-buttons .circle-button-2 {
+    width: 300px;
+    height: 300px;
+  }
+  .squad-page .circle-buttons .circle-button-3 {
+    width: 300px;
+    height: 300px;
+  }
+}/*# sourceMappingURL=squad.css.map */

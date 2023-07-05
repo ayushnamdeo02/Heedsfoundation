@@ -1,25 +1,37 @@
 import React, { Component } from 'react';
-import Footer from '../components/Footer.jsx';
-import Navbar from '../components/Navbar.jsx';
-import Jumbotron from '../components/Jumbotron.jsx';
+import './about/about.css';
+import logo from '../images/logobgclear.png';
 
 class About extends Component {
   render() {
     return (
-      <div>
-        <Navbar />
-        <Jumbotron title="About Me!" subtitle="This page is all about me and my work!"/>
-        <div className="container">
-          <h2>About</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat orci eu nulla sagittis, pulvinar dignissim lectus consequat. Etiam in lobortis ligula, vitae ornare lacus. Vivamus scelerisque lorem arcu, vitae eleifend ex commodo a. Quisque rutrum, augue sit amet egestas efficitur, magna nulla lacinia elit, sed suscipit tortor erat vitae enim. Donec egestas odio id aliquet rhoncus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque mi dolor, egestas nec lacinia non, sodales eu lacus. Donec ultricies nec elit ac ornare. Quisque fermentum ligula ut feugiat cursus. Aliquam auctor suscipit ex a lacinia. Mauris sollicitudin, justo quis fringilla finibus, dui diam ullamcorper nulla, sit amet placerat justo neque quis quam. Praesent nec nibh at tortor ornare dignissim. Morbi tincidunt fringilla turpis at luctus. Vivamus dapibus ligula eget pellentesque luctus. Maecenas ut consectetur lacus, non dignissim nisi. Praesent sodales tellus sit amet faucibus tempus.
-          </p>
-          <p>
-            Maecenas dapibus, est posuere eleifend rutrum, lectus ligula gravida urna, at pretium dui turpis non lorem. Donec pretium lorem ipsum, at fermentum nibh consequat facilisis. Sed maximus massa est, vel porta diam placerat id. Vivamus imperdiet lorem eget dolor bibendum, eget gravida tellus interdum. Sed lectus odio, condimentum eu porttitor vel, euismod sit amet urna. Nam quis dui a nibh rhoncus aliquam vitae in metus. Nam sit amet semper turpis. Suspendisse eu malesuada tortor, vel lacinia nisl. Phasellus ultrices vehicula magna, sed tempor neque dapibus quis. Phasellus urna justo, sollicitudin ac odio eget, convallis varius nulla. Vivamus in lacinia lorem, at eleifend nulla. Nulla nec luctus purus. Integer id purus mauris. Phasellus finibus ultricies erat a tempus. Nulla luctus sem nec justo venenatis, eu faucibus purus congue.
+      <div className="about-us" id='aboutus'><br></br><br></br>
+      <h2 className="section-title">About Us</h2>
+      <div className='container-about'>
+      <img src={logo} alt="Logo" className="logo-image"></img>
+      <p className="about-description">Heeds Foundation, founded by students from Nagpur City, is a non-profit organization dedicated to empowering communities through education and addressing social issues and instabilities. with a mission to empower communities through education, healthcare, sustainable development, and humanitarian response, Heeds Foundation aims to provide support, resources, and assistance to those in need. The organization was established by a group of passionate students who identified various social challenges and decided to take action by forming a Heeds Foundation. Through their collective efforts, Heeds Foundation strives to create positive change, promote equality, and make a meaningful impact in the lives of individuals and communities.
+
+<br></br>
+Our primary focus is on providing quality education to underserved child, ensuring that every child has access to learning opportunities. We believe that education is the key to unlocking a brighter future and creating lasting change. Through our initiatives, we aim to bridge the educational gap, provide resources and scholarships, and promote equal access to education for all. With a strong commitment to promoting equality and fostering positive change, Heeds Foundation strives to empower individuals and communities through the transformative power of education.</p>
+      </div>
+      <div className="mission-vision">
+        <div className="mission">
+          <h3 className="section-subtitle">Our Mission</h3>
+          <p className="mission-description">
+          Our mission is to empower individuals and communities through education, health care, and awareness. We are dedicated to providing access to quality education for all, ensuring that every child has the opportunity to learn, grow, and reach their full potential. We strive to improve access to essential health care services, promoting well-being and preventive measures. Additionally, we are committed to creating awareness about social issues, environmental sustainability, and promoting positive change in society. Through our mission, we aim to create a better future by empowering individuals, fostering equality, and driving sustainable development.
           </p>
         </div>
-        <Footer />
+        <div className="vision">
+          <h3 className="section-subtitle">Our Vision</h3>
+          <p className="vision-description">
+          “Creating a future where every child has access to quality education and healthcare,
+           where communities thrive through sustainable development. Our ultimate goal is to 
+           ensure that no child goes hungry, they are nourished. " We need a brighter tomorrow."
+          </p>
+        </div>
       </div>
+      
+    </div>
     );
   }
 }
