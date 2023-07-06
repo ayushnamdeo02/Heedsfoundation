@@ -135,6 +135,21 @@
                             padding: 10px;
                             font-size: 12px;
                         }
+                        .social-media-button-contact{
+                            marker: none;
+                            display: flex;
+                            margin-top: -50px;
+                            margin-left: -50px;
+                            gap:10px;
+                            li{
+                                
+                                width: 40px;
+                                height: 40px;
+                            
+                            img{
+                                width: 40px;
+                            }}
+                        }
                     }
                 }
             }
