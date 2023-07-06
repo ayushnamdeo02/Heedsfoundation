@@ -11,7 +11,7 @@ class Work extends Component {
         <img src={header} alt='header'></img>
         <div className="title">Our Works</div>
         <div className='work-content'>
-            <p className='work-content-heading'><br></br>Heeds Foundation Work</p>
+            <p className='work-content-heading'>Heeds Foundation Work</p>
             <div className='box-work'><ul>
             <li><b>Education Support:</b> Empowering communities through education by providing resources, scholarships, and equal opportunities for learning.</li>
             <li><b>Healthcare Initiatives:</b> Improving access to quality healthcare services in underserved areas, promoting well-being and addressing health disparities.</li>

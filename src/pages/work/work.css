@@ -67,11 +67,29 @@
 
 @media (max-width: 480px) {
   .work-container {
-    display: contents;
+    display: block;
+    max-width: 100%;
+  }
+  .work-container img {
+    max-width: 100%;
   }
   .work-container .title {
-    margin-top: -100px;
+    margin-top: -90px;
     font-size: 30px;
+  }
+  .work-container .work-content {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: -25px;
+  }
+  .work-container .work-content .work-content-heading {
+    font-size: 25px;
+  }
+  .work-container .work-content .box-work ul {
+    margin-bottom: 50px;
+  }
+  .work-container .work-content .box-work ul li {
+    font-size: 15px;
   }
   .work-container .projects {
     display: grid;
@@ -83,7 +101,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 20px;
     margin-right: 20px;
   }
   .work-container .projects .project img {
