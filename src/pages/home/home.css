@@ -2,11 +2,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 100px;
 }
 .container-home .slider {
   width: 100%;
-  height: 650px;
+  height: 665px;
   overflow: hidden;
   position: relative;
 }
@@ -46,19 +45,85 @@
 }
 .container-home .prev-button {
   position: absolute;
-  top: 95%;
+  top: 92%;
   left: 20px;
   transform: translateY(-50%);
 }
 .container-home .next-button {
   position: absolute;
-  top: 95%;
+  top: 92%;
   right: 20px;
   transform: translateY(-50%);
+}
+.container-home .home-about-section {
+  background-color: rgba(248, 197, 79, 0.6862745098);
+  margin-top: 50px;
+  padding-top: 10px;
+  text-align: center;
+  margin-bottom: 50px !important;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.container-home .home-about-section .home-about-section-title {
+  font-size: 50px;
+  font-weight: 600;
+}
+.container-home .home-about-section .home-about-section-description {
+  font-size: 23px;
+  text-align: justify;
+  line-height: normal;
 }
 
 @media (max-width: 480px) {
   .container-home .slider {
     height: 200px;
+  }
+  .container-home .prev-button {
+    border: dashed;
+    background: none;
+    padding: 5px;
+    font-size: 9px;
+    cursor: pointer;
+    color: white;
+    transition: color 0.3s ease;
+  }
+  .container-home .next-button {
+    border: dashed;
+    background: none;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 9px;
+    cursor: pointer;
+    color: white;
+    transition: color 0.3s ease;
+  }
+  .container-home .prev-button {
+    position: absolute;
+    top: 28%;
+    left: 8px;
+    transform: translateY(-50%);
+  }
+  .container-home .next-button {
+    position: absolute;
+    top: 28%;
+    right: 8px;
+    transform: translateY(-50%);
+  }
+  .container-home .home-about-section {
+    margin-top: 50px;
+    padding-top: 10px;
+    text-align: center;
+    margin-bottom: 50px !important;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .container-home .home-about-section .home-about-section-title {
+    font-weight: 600;
+  }
+  .container-home .home-about-section .home-about-section-description {
+    font-size: 15px;
+    text-align: justify;
+    line-height: normal;
   }
 }/*# sourceMappingURL=home.css.map */
