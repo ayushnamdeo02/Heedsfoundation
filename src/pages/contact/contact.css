@@ -4,7 +4,7 @@
   font-weight: 600;
 }
 .container-contact .partition-contact {
-  background-color: rgba(248, 197, 79, 0.6862745098);
+  background-color: white;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -61,7 +61,7 @@
   margin: 10px;
   padding: 20px;
   outline: none;
-  background: white;
+  background: rgb(219, 219, 219);
   font-size: 16px;
 }
 .container-contact .partition-contact .partition-right .contact-form form button {

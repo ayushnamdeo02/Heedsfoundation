@@ -60,11 +60,11 @@ class Contact extends Component {
             <img src={logo} alt='logo'></img>
             <div className="contact-info">
               <h6>Contact No.</h6>
-              <p>+91 8788411441</p>
-              <p>+91 7987210406</p>
-              <p>+91 8208048191</p>
-              <p>+91 8668353016</p>
-              <p>+91 9881250691</p>
+              <p>Mr. Pratik Meshram  +91 8788411441</p>
+              <p>Mr. Ayush Namdeo    +91 7987210406</p>
+              <p>Mr.Gaurav Borghare  +91 8208048191</p>
+              <p>Mr.Shivam Sontakke  +91 8668353016</p>
+              <p>Mr.Kartik Bhandari  +91 8118847746</p>
               <h6>Email ID</h6>
               <p>heedsfoundation.ngo@gmail.com</p>
               <h6>Social Media Links:</h6>
