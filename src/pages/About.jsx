@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './about/about.css';
-import logo from '../images/logobgclear.png';
 import header from './assets/header-work.png';
 
 class About extends Component {
