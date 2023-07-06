@@ -63,7 +63,7 @@
                   input,
                   textarea {
                     border: 0;
-                    border-radius: 50px;
+                    border-radius: 30px;
                     margin: 10px;
                     padding: 20px;
                     outline: none;
@@ -73,16 +73,16 @@
               
                   button {
                     padding: 15px;
-                    background:#F7B520;
-                    color: black;
-                    font-weight: 700;
+                    background: #1b1c1d;
+                    color: white;
+                    font-weight: 500;
                     font-size: 18px;
                     border: 0;
                     outline: none;
                     cursor: pointer;
                     width: 150px;
                     margin: 20px auto 0;
-                    border-radius: 30px;
+                    border-radius: 20px;
                   }
                 }
               }

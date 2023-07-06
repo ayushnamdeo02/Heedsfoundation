@@ -1,32 +1,25 @@
-.volunteer-container {
-  align-items: center;
-}
-.volunteer-container .head img {
+.volunteer-container img {
   width: 100%;
   position: relative;
 }
 .volunteer-container .title-volunteer {
-  position: absolute;
+  position: relative;
   text-align: center;
   font-size: 40px;
   font-weight: 600;
-  margin-top: -400px;
-  margin-left: 480px;
+  margin-top: -300px;
   color: white;
 }
 .volunteer-container .volunteer-form {
-  margin-top: -280px;
+  margin-top: 80px;
   margin-left: 300px;
+  margin-right: 300px;
   margin-bottom: 120px;
   position: relative;
   background-color: white;
-  width: 950px;
   max-height: -moz-fit-content;
   max-height: fit-content;
-  padding-top: 15px;
-  padding-left: 35px;
-  padding-bottom: 25px;
-  padding-right: 35px;
+  padding: 15px 35px 25px;
 }
 .volunteer-container .volunteer-form .info-volunteer {
   text-align: center;
@@ -53,49 +46,33 @@
   padding: 14px 16px;
   text-decoration: none;
 }
-.volunteer-container .volunteer-form .role {
-  margin-left: 5px;
-  font-size: 18px;
-  font-weight: 700;
+.volunteer-container .volunteer-form .body-form {
+  background-color: #F7B520;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 70px;
+  padding-top: 10px;
+  border-radius: 10px;
 }
-.volunteer-container .volunteer-form .emailid {
-  margin-left: 5px;
-  font-size: 17px;
-  font-weight: 700;
-}
-.volunteer-container .volunteer-form .fullName {
-  margin-left: 5px;
-  font-size: 17px;
-  font-weight: 700;
-}
-.volunteer-container .volunteer-form .gender {
-  margin-left: 5px;
-  font-size: 17px;
-  font-weight: 700;
-}
-.volunteer-container .volunteer-form .dateOfBirth {
+.volunteer-container .volunteer-form .body-form .role,
+.volunteer-container .volunteer-form .body-form .emailid,
+.volunteer-container .volunteer-form .body-form .fullName,
+.volunteer-container .volunteer-form .body-form .gender,
+.volunteer-container .volunteer-form .body-form .dateOfBirth,
+.volunteer-container .volunteer-form .body-form .contactNo,
+.volunteer-container .volunteer-form .body-form .address {
   margin-left: 5px;
   font-size: 17px;
   font-weight: 700;
 }
-.volunteer-container .volunteer-form .contactNo {
-  margin-left: 5px;
-  font-size: 17px;
-  font-weight: 700;
-}
-.volunteer-container .volunteer-form .address {
-  margin-left: 5px;
-  font-size: 17px;
-  font-weight: 700;
-}
-.volunteer-container .volunteer-form label {
+.volunteer-container .volunteer-form .body-form label {
   display: block;
   margin-top: 10px;
 }
-.volunteer-container .volunteer-form select,
-.volunteer-container .volunteer-form input[type=text],
-.volunteer-container .volunteer-form input[type=tel],
-.volunteer-container .volunteer-form textarea {
+.volunteer-container .volunteer-form .body-form select,
+.volunteer-container .volunteer-form .body-form input[type=text],
+.volunteer-container .volunteer-form .body-form input[type=tel],
+.volunteer-container .volunteer-form .body-form textarea {
   margin-top: 5px;
   width: 100%;
   padding: 5px;
@@ -104,27 +81,102 @@
   box-sizing: border-box;
   font-size: 14px;
 }
-.volunteer-container .volunteer-form textarea {
+.volunteer-container .volunteer-form .body-form textarea {
   height: 100px;
 }
-.volunteer-container .volunteer-form .declaration {
+.volunteer-container .volunteer-form .body-form .declaration {
   margin-top: 10px;
   display: flex;
   align-items: center;
 }
-.volunteer-container .volunteer-form .declaration input[type=checkbox] {
+.volunteer-container .volunteer-form .body-form .declaration input[type=checkbox] {
   margin-right: 5px;
 }
-.volunteer-container .volunteer-form button[type=submit] {
+.volunteer-container .volunteer-form .body-form button[type=submit] {
   float: right;
   width: 200px;
   align-items: flex-end;
   margin-top: 10px;
   padding: 10px 15px;
-  background-color: #4caf50;
+  background-color: #222425;
   color: white;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
+}
+
+@media (max-width: 480px) {
+  .volunteer-container {
+    max-width: 100%;
+  }
+  .volunteer-container img {
+    position: relative;
+    max-width: 100%;
+  }
+  .volunteer-container .title-volunteer {
+    margin-left: 0;
+    font-size: 20px;
+    margin-top: -100px;
+  }
+  .volunteer-container .volunteer-form {
+    position: relative;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    max-width: 100%;
+  }
+  .volunteer-container .volunteer-form .info-volunteer {
+    text-align: center;
+  }
+  .volunteer-container .volunteer-form .info-volunteer .info-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  .volunteer-container .volunteer-form .info-volunteer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-size: 17px;
+    margin-bottom: 50px;
+  }
+  .volunteer-container .volunteer-form .info-volunteer ul li {
+    float: left;
+  }
+  .volunteer-container .volunteer-form .info-volunteer ul li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  .volunteer-container .volunteer-form .body-form {
+    background-color: #F7B520;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 70px;
+    padding-top: 10px;
+    border-radius: 10px;
+  }
+  .volunteer-container .volunteer-form .body-form .role,
+  .volunteer-container .volunteer-form .body-form .emailid,
+  .volunteer-container .volunteer-form .body-form .fullName,
+  .volunteer-container .volunteer-form .body-form .gender,
+  .volunteer-container .volunteer-form .body-form .dateOfBirth,
+  .volunteer-container .volunteer-form .body-form .contactNo,
+  .volunteer-container .volunteer-form .body-form .address {
+    margin-left: 0;
+    font-size: 14px;
+  }
+  .volunteer-container .volunteer-form .body-form label {
+    margin-top: 10px;
+  }
+  .volunteer-container .volunteer-form .body-form button[type=submit] {
+    width: 100%;
+    font-size: 14px;
+    color: white;
+    background-color: #222425;
+  }
 }/*# sourceMappingURL=Volunteer.css.map */

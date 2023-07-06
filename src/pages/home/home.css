@@ -71,7 +71,6 @@
 .container-home .home-about-section .home-about-section-description {
   font-size: 23px;
   text-align: justify;
-  line-height: normal;
 }
 
 @media (max-width: 480px) {

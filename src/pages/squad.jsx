@@ -13,6 +13,7 @@ class Squads extends Component {
         <h2 className="page-title">Squads</h2>
         <div className="squad-container">
             <p>Welcome to Heeds Foundation, a dynamic organization driven by a passionate team, dedicated volunteers, and impactful partnerships. Our mission is to empower communities through education, healthcare, sustainable development, and humanitarian response. With a strong focus on creating positive change, we work hand in hand with volunteers who bring their skills, compassion, and energy to our initiatives.</p>
+        <h6>To Know More</h6>
         </div>
         <div className="circle-buttons">
         <Link className="circle-button-1" to="/"></Link>

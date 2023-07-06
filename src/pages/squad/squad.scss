@@ -2,7 +2,6 @@
     text-align: center;
     margin-bottom: 20px;
     img{
-        display: block;
         max-width: 100%;
         max-height: 500px;
         position: relative;
@@ -53,13 +52,7 @@
         text-decoration: none;
         position: relative; /* Add position relative */
       
-        .circle-button-label {
-          color: white;
-          font-size: 30px;
-          margin-top: 10px;
-          position: relative; /* Add position relative */
-          z-index: 1; /* Add z-index to bring the text in front */
-        }
+        
       }
       
 
@@ -77,13 +70,7 @@
         text-decoration: none;
         position: relative; /* Add position relative */
       
-        .circle-button-label {
-          color: white;
-          font-size: 30px;
-          margin-top: 10px;
-          position: relative; /* Add position relative */
-          z-index: 1; /* Add z-index to bring the text in front */
-        }
+        
       }
       
 
@@ -101,31 +88,55 @@
         text-decoration: none;
         position: relative; /* Add position relative */
       
-        .circle-button-label {
-          color: white;
-          font-size: 30px;
-          margin-top: 10px;
-          position: relative; /* Add position relative */
-          z-index: 1; /* Add z-index to bring the text in front */
-        }
+        
       }
     }
   }
   @media (max-width: 480px) {
     .squad-page {
-      
-      display: contents;
+      max-width: 100%;
+      margin-bottom: 20px;
+      img{
+        position: relative;
+        max-width: 100%;
+      }
       .page-title {
-        margin-top: 40px;
-        font-size: 30px;
+        position: relative;
+        font-size: 40px;
+        margin-top: -100px;
         margin-bottom: 30px;
       }
-  
+      .squad-container{
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: -10px;
+        p{
+            padding-left: 15px;
+            padding-right: 15px;
+            font-size: 17px;
+            text-align: justify;
+            font-weight: 600;
+            padding-top: 20px;
+        }
+        h6{
+            font-size: 20px;
+            font-weight: 600;
+            padding-top: 40px;
+          
+        }
+      }
       .circle-buttons {
+        margin-left: 30px;
+        margin-right: 30px;
+        border-radius: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: #F7B520;
         justify-content: center;
         gap: 40px;
         align-items: center;
         flex-direction: column;
+        margin-top: 35px;
         
   
         .circle-button-1 {

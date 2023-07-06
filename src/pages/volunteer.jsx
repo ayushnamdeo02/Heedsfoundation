@@ -85,19 +85,20 @@ class Volunteer extends Component {
 
     return (
       <div className="volunteer-container">
-        <div className='head'>
+        
         <img src={volunteer_head} alt='head'></img>
-        </div>
+        
         <div className="title-volunteer">Join Heeds Foundation Family</div>
         <form className="volunteer-form" onSubmit={this.handleSubmit}>
           <div className="info-volunteer">
-            <p className='info-title'>Core Principles of Heeds Foundation</p>
+            <div className='info-title'>Core Principles of Heeds Foundation</div>
             <ul>
               <li><b>Collaboration:</b> We actively seek to collaborate with like-minded organizations, volunteers, and community members to maximize our collective efforts.</li>
               <li><b>Equality:</b> We believe in equality and inclusivity for all individuals, irrespective of their background, gender, or socioeconomic status.</li>
               <li><b>Volunteering:</b> We recognize the value and impact of volunteers in furthering our mission. We promote a culture of volunteerism.</li>
             </ul>
           </div>
+          <div className='body-form'>
           <label className="role">Join as:</label>
         <select
           id="role"
@@ -180,6 +181,7 @@ class Volunteer extends Component {
         </div>
 
         <button type="submit">Submit</button>
+        </div>
         </form>
       </div>
     );
