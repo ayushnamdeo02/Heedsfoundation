@@ -14,7 +14,7 @@ class Footer extends Component {
           </ul>
           </div>
           <div className='right-col'>
-            <p>© 2022–2023 Heeds Foundation. All rights reserved. Site by Ayush & Anish</p></div>
+            <p>© 2022–2023 Heeds Foundation.</p><p> All rights reserved.</p><p> Designed & Developed by Ayush & Anish</p></div>
           </div>
     </footer>
     );

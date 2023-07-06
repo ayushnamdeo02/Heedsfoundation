@@ -1,9 +1,12 @@
 .footer-container {
+  background-color: #F7B520;
   font-size: 15px;
   padding-left: 40px;
   padding-right: 40px;
   display: flex;
   justify-content: space-between;
+  font-weight: 500;
+  padding-top: 10px;
 }
 .footer-container .left-col {
   display: flex;
@@ -12,10 +15,29 @@
 .footer-container .left-col ul {
   display: flex;
   gap: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 .footer-container .right-col {
-  align-items: end;
+  align-items: center;
+  display: flex;
 }
 .footer-container .right-col p {
   color: rgb(34, 34, 34);
+  margin-top: 10px;
+}
+
+@media (max-width: 480px) {
+  .footer-container {
+    display: block;
+  }
+  .footer-container .left-col {
+    flex-direction: column;
+    margin-bottom: 5px;
+  }
+  .footer-container .right-col {
+    display: block;
+    text-align: center;
+  }
 }/*# sourceMappingURL=footer.css.map */

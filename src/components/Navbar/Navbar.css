@@ -10,10 +10,11 @@
   justify-content: flex-start;
 }
 .navbar-container .navbar-left .navbar-brand img {
-  width: 250px;
+  width: 200px;
   height: auto;
 }
 .navbar-container .navbar-mid {
+  margin-left: 250px;
   display: flex;
   align-items: center;
   flex-grow: 1;
@@ -79,11 +80,12 @@
 }
 @media (max-width: 480px) {
   .navbar-container .navbar-left .navbar-brand img {
+    margin-left: 15px;
     width: 150px;
     height: auto;
   }
   .navbar-container .navbar-mid .menu-button {
-    margin-left: auto;
+    margin-left: -70px;
     display: block;
   }
   .navbar-container .navbar-mid .navbar-list {
