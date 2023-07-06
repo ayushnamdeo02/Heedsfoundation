@@ -1,9 +1,19 @@
 {
     "navigationFallback": {
-        "rewrite": "index.html",
-        "exclude": ["/static/images/*.{png,jpg,gif}", "/static/css/*"]
+      "rewrite": "index.html",
+      "exclude": ["/static/images/*.{png,jpg,gif}", "/static/css/*"]
     },
     "mimeTypes": {
-        ".json": "text/json"
+      ".json": "text/json"
+    },
+    "routes": [
+      {
+        "route": "/api/*",
+        "serve": "/api"
+      }
+    ],
+    "apiKeys": {
+      "sheetdb": "https://sheetdb.io/api/v1/9hpyl1zaqyaku"
     }
-}
+  }
+  
