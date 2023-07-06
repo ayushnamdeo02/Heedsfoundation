@@ -18,7 +18,7 @@
   position: absolute;
   opacity: 0;
   transform: translateX(100%);
-  transition: opacity 0.5s ease, transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  transition: opacity 0.3s ease-in-out, transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 .container-home .slider .slide.active {
   opacity: 1;
@@ -55,4 +55,10 @@
   top: 95%;
   right: 20px;
   transform: translateY(-50%);
+}
+
+@media (max-width: 480px) {
+  .container-home .slider {
+    height: 200px;
+  }
 }/*# sourceMappingURL=home.css.map */
