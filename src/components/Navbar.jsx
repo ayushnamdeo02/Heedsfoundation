@@ -1,4 +1,4 @@
-import React, { Component} from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../images/logobgclear.png';
 import linkedin from '../images/linkedin-logo.png';
@@ -10,14 +10,18 @@ class Navbar extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isMenuOpen: false
+      isMenuOpen: false,
     };
   }
 
   toggleMenu = () => {
     this.setState((prevState) => ({
-      isMenuOpen: !prevState.isMenuOpen
+      isMenuOpen: !prevState.isMenuOpen,
     }));
+  };
+
+  handleLinkClick = () => {
+    this.setState({ isMenuOpen: false });
   };
 
   render() {
@@ -38,32 +42,32 @@ class Navbar extends Component {
           </button>
           <ul className={`navbar-list ${isMenuOpen ? 'mobile-menu-open' : ''}`}>
             <li className="nav-item active">
-              <Link className="nav-link" to="/">
+              <Link className="nav-link" to="/" onClick={this.handleLinkClick}>
                 Home <span className="sr-only">(current)</span>
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/about">
+              <Link className="nav-link" to="/about" onClick={this.handleLinkClick}>
                 About
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/work">
+              <Link className="nav-link" to="/work" onClick={this.handleLinkClick}>
                 Our Work
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/event">
+              <Link className="nav-link" to="/event" onClick={this.handleLinkClick}>
                 Events
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/squad">
+              <Link className="nav-link" to="/squad" onClick={this.handleLinkClick}>
                 Squads
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/contact">
+              <Link className="nav-link" to="/contact" onClick={this.handleLinkClick}>
                 Join Us
               </Link>
             </li>
