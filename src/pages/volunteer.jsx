@@ -18,7 +18,6 @@ class Volunteer extends Component {
       agreed: '',
       emailValid: true,
       mobileNumberValid: true,
-      dateOfBirthValid: true,
     };
   }
 
@@ -36,7 +35,6 @@ class Volunteer extends Component {
       emailid,
       emailValid,
       mobileNumberValid,
-      dateOfBirthValid,
     } = this.state;
 
     if (agreed !== 'Yes') {
@@ -44,8 +42,8 @@ class Volunteer extends Component {
       return;
     }
 
-    if (!emailValid || !mobileNumberValid || !dateOfBirthValid) {
-      alert('Please enter valid details.');
+    if (!emailValid || !mobileNumberValid) {
+      alert('Please enter valid email and mobile number.');
       return;
     }
 
@@ -79,7 +77,6 @@ class Volunteer extends Component {
           agreed: 'Yes',
           emailValid: true,
           mobileNumberValid: true,
-          dateOfBirthValid: true,
         });
       } else {
         alert('Registration submission failed. Please try again.');
@@ -97,8 +94,6 @@ class Volunteer extends Component {
         this.validateEmail(value);
       } else if (name === 'contactNo') {
         this.validateMobileNumber(value);
-      } else if (name === 'dateOfBirth') {
-        this.validateDateOfBirth(value);
       }
     });
   };
@@ -115,13 +110,6 @@ class Volunteer extends Component {
     this.setState({ mobileNumberValid: isValid });
   };
 
-  validateDateOfBirth = (dateOfBirth) => {
-    const today = new Date();
-    const selectedDate = new Date(dateOfBirth);
-    const isValid = selectedDate <= today;
-    this.setState({ dateOfBirthValid: isValid });
-  };
-
   render() {
     const {
       fullName,
@@ -134,7 +122,6 @@ class Volunteer extends Component {
       agreed,
       emailValid,
       mobileNumberValid,
-      dateOfBirthValid,
     } = this.state;
 
     return (
@@ -178,7 +165,7 @@ class Volunteer extends Component {
 
             <label className="emailid">Email id:</label>
             <input
-              type="text"
+              type="email"
               id="emailid"
               name="emailid"
               value={emailid}
@@ -197,14 +184,13 @@ class Volunteer extends Component {
 
             <label className="dateOfBirth">Date of Birth:</label>
             <input
-              type="date"
+              type="text"
               id="dateOfBirth"
               name="dateOfBirth"
               value={dateOfBirth}
               onChange={this.handleInputChange}
               required
             />
-            {!dateOfBirthValid && <div className="error">Please enter a valid date of birth.</div>}
 
             <label className="contactNo">Contact No:</label>
             <input
