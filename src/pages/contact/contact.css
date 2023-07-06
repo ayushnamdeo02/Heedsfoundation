@@ -1,13 +1,10 @@
-.container-contact {
-  display: grid;
-}
 .container-contact .container-title {
   text-align: center;
   font-size: 40px;
   font-weight: 600;
 }
 .container-contact .partition-contact {
-  background-color: #f7f7f7;
+  background-color: rgba(248, 197, 79, 0.6862745098);
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -22,14 +19,14 @@
 }
 .container-contact .partition-contact .partition-left .contact-info {
   margin-top: 15px;
-  margin-left: 60px;
+  margin-left: 20%;
 }
-.container-contact .partition-contact .partition-left .contact-info h3 {
-  font-weight: 600;
+.container-contact .partition-contact .partition-left .contact-info h6 {
+  font-weight: 700;
 }
 .container-contact .partition-contact .partition-left .contact-info p {
   font-size: 15px;
-  font-weight: 700;
+  font-weight: 500;
 }
 .container-contact .partition-contact .partition-left .contact-info .social-media-button-contact {
   display: flex;
@@ -69,7 +66,7 @@
 }
 .container-contact .partition-contact .partition-right .contact-form form button {
   padding: 15px;
-  background: #4caf50;
+  background: #F7B520;
   color: black;
   font-weight: 700;
   font-size: 18px;
@@ -79,4 +76,52 @@
   width: 150px;
   margin: 20px auto 0;
   border-radius: 30px;
+}
+
+@media (max-width: 480px) {
+  .container-contact {
+    max-width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .container-contact .partition-contact {
+    max-width: 100%;
+    display: block;
+    align-items: center;
+  }
+  .container-contact .partition-contact .partition-left {
+    max-width: 100%;
+    height: 500px;
+  }
+  .container-contact .partition-contact .partition-left img {
+    margin-left: 85px;
+  }
+  .container-contact .partition-contact .partition-right {
+    max-width: 100%;
+  }
+  .container-contact .partition-contact .partition-right .contact-form .thank-you-message {
+    text-align: center;
+    padding: 20px;
+  }
+  .container-contact .partition-contact .partition-right .contact-form .thank-you-message p {
+    font-size: 18px;
+    color: green;
+  }
+  .container-contact .partition-contact .partition-right .contact-form form {
+    padding: 2vw 2vw;
+    max-width: 100%;
+  }
+  .container-contact .partition-contact .partition-right .contact-form form h3 {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  .container-contact .partition-contact .partition-right .contact-form form input,
+  .container-contact .partition-contact .partition-right .contact-form form textarea {
+    padding: 12px;
+    font-size: 12px;
+  }
+  .container-contact .partition-contact .partition-right .contact-form form button {
+    padding: 10px;
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=contact.css.map */

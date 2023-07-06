@@ -78,6 +78,11 @@ class Contact extends Component {
           </div>
           <div className="partition-right">
             <div className="contact-form" id="contact">
+            {isSubmitted ? (
+              <div className="thank-you-message">
+                <p>Thank you for contacting us!</p>
+              </div>
+            ) : (
               <form onSubmit={this.handleSubmit}>
                 <h3>GET IN TOUCH</h3>
                 <input
@@ -113,7 +118,7 @@ class Contact extends Component {
                 />
                 <button type="submit">Send</button>
               </form>
-              {isSubmitted && <p>Message has been sent. Thank you!</p>}
+              )}
             </div>
           </div>
         </div>
