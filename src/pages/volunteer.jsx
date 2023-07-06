@@ -10,6 +10,7 @@ class Volunteer extends Component {
 
     this.state = {
       fullName: '',
+      emailid:'',
       role: 'volunteer',
       gender: '',
       dateOfBirth: '',
@@ -22,7 +23,7 @@ class Volunteer extends Component {
   handleSubmit = async (e) => {
     e.preventDefault();
 
-    const { agreed, fullName, role, gender, dateOfBirth, contactNo, address } =
+    const { agreed, fullName, role, gender, dateOfBirth, contactNo, address,emailid } =
       this.state;
 
     if (agreed !== 'Yes') {
@@ -32,7 +33,7 @@ class Volunteer extends Component {
 
     const formData = {
       joinheedsfoundation: role,
-      email: '',
+      emailid: emailid,
       fullname: fullName,
       gender: gender,
       dob: dateOfBirth,
@@ -52,6 +53,7 @@ class Volunteer extends Component {
         this.setState({
           fullName: '',
           role: 'volunteer',
+          emailid:'',
           gender: '',
           dateOfBirth: '',
           contactNo: '',
@@ -76,6 +78,7 @@ class Volunteer extends Component {
     const {
       fullName,
       role,
+      emailid,
       gender,
       dateOfBirth,
       contactNo,
@@ -116,6 +119,15 @@ class Volunteer extends Component {
           id="fullName"
           name="fullName"
           value={fullName}
+          onChange={this.handleInputChange}
+          required
+        />
+        <label className="emailid">Email id:</label>
+        <input
+          type="text"
+          id="emailid"
+          name="emailid"
+          value={emailid}
           onChange={this.handleInputChange}
           required
         />
