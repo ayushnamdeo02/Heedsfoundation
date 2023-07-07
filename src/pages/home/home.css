@@ -193,42 +193,46 @@
 }
 
 @media (max-width: 480px) {
+  .container-home {
+    max-height: auto;
+  }
   .container-home .slider {
-    height: 200px;
+    height: 300px;
   }
   .container-home .prev-button {
     border: 1px solid;
     background: none;
-    padding: 5px;
+    padding-left: 80px;
+    padding-right: 80px;
     font-size: 9px;
     cursor: pointer;
-    color: white;
+    color: black;
     transition: color 0.3s ease;
   }
   .container-home .next-button {
     border: 1px solid;
     background: none;
-    padding: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 80px;
+    padding-right: 80px;
     font-size: 9px;
     cursor: pointer;
-    color: white;
+    color: black;
     transition: color 0.3s ease;
   }
   .container-home .prev-button {
-    position: absolute;
-    top: 28%;
-    left: 8px;
+    position: relative;
+    top: 20px;
+    left: -90px;
     transform: translateY(-50%);
   }
   .container-home .next-button {
-    position: absolute;
-    top: 28%;
-    right: 8px;
+    position: relative;
+    top: -5px;
+    right: -100px;
     transform: translateY(-50%);
   }
   .container-home .home-data {
+    margin-top: -10px;
     max-width: 100%;
   }
   .container-home .home-data .data-about-home .home-title {
