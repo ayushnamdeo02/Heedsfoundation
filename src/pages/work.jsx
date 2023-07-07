@@ -9,7 +9,7 @@ class Work extends Component {
     return (
       <div className="work-container" id="work">
         <Helmet>
-          <title>Our Works | For Betterment of Communittee</title>
+          <title>Our Works</title>
           <meta name="description" content="Explore our portfolio of projects and initiatives. Learn how we are making a difference in education, healthcare, sustainable development, and more." />
         </Helmet>
 

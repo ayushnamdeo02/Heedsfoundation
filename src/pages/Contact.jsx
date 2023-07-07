@@ -58,7 +58,6 @@ class Contact extends Component {
     return (
       <div className="container-contact">
         <Helmet>
-          <title>Contact Us - Heeds Foundation</title>
           <meta name="description" content="Get in touch with Heeds Foundation. Contact us for any inquiries, collaborations, or assistance. We are here to help you. Connect with us through phone, email, or social media." />
         </Helmet>
         <div className="partition-contact">
