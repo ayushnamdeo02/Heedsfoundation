@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #ffffffc0;
+  background-color: white;
 
   .navbar-left{
     display: flex;
@@ -28,8 +28,8 @@
         background: none;
         border: none;
         cursor: pointer;
-        padding: 10px;
-        margin-right: 10px;
+        
+        
 
         span {
             display: block;
@@ -45,7 +45,7 @@
       display: flex;
 
       .nav-item {
-        margin-right: 10px;
+        
 
         .nav-link {
           text-decoration: none;
@@ -96,7 +96,7 @@
   }
 
   @media (max-width: 480px) {
-    
+      
       .navbar-left{
         .navbar-brand img {
           margin-left: 15px;
@@ -105,8 +105,9 @@
         }
       }
     .navbar-mid {
+      margin-left: 160px;
       .menu-button {
-        margin-left: -70px;
+        
         display: block;
       }
 

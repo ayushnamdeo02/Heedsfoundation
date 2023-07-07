@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(255, 255, 255, 0.7529411765);
+  background-color: white;
 }
 .navbar-container .navbar-left {
   display: flex;
@@ -26,8 +26,6 @@
   background: none;
   border: none;
   cursor: pointer;
-  padding: 10px;
-  margin-right: 10px;
 }
 .navbar-container .navbar-mid .menu-button span {
   display: block;
@@ -39,9 +37,6 @@
 .navbar-container .navbar-mid .navbar-list {
   list-style: none;
   display: flex;
-}
-.navbar-container .navbar-mid .navbar-list .nav-item {
-  margin-right: 10px;
 }
 .navbar-container .navbar-mid .navbar-list .nav-item .nav-link {
   text-decoration: none;
@@ -85,8 +80,10 @@
     width: 150px;
     height: auto;
   }
+  .navbar-container .navbar-mid {
+    margin-left: 160px;
+  }
   .navbar-container .navbar-mid .menu-button {
-    margin-left: -70px;
     display: block;
   }
   .navbar-container .navbar-mid .navbar-list {
