@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import './Volunteer/Volunteer.css';
 import volunteer_head from './assets/head.png';
+import { Helmet } from 'react-helmet';
 
 class Volunteer extends Component {
   constructor(props) {
@@ -139,6 +140,10 @@ class Volunteer extends Component {
 
     return (
       <div className="volunteer-container">
+         <Helmet>
+          <title>Join Heeds Foundation Family | Example Website</title>
+          <meta name="description" content="Become a volunteer and join the Heeds Foundation family. Collaborate, promote equality, and make a difference in the community. Sign up now!" />
+        </Helmet>
         <img src={volunteer_head} alt="head" />
         <div className="title-volunteer">Join Heeds Foundation Family</div>
         <form className="volunteer-form" onSubmit={this.handleSubmit}>
