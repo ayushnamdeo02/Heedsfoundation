@@ -8,6 +8,11 @@ import image4 from "../images/slider-4.jpg";
 import image5 from "../images/slider-5.jpg";
 import image6 from "../images/slider-6.jpg";
 import image7 from "../images/slider-7.jpg";
+import  healthcare from '../images/healthcare.png';
+import education from '../images/education.png';
+import empower from '../images/empower.png';
+import development from '../images/development.png';
+import support from '../images/support.png';
 
 class Home extends Component {
   state = {
@@ -82,11 +87,92 @@ class Home extends Component {
         <button className="prev-button" onClick={this.prevSlide}>Previous</button>
         <button className="next-button" onClick={this.nextSlide}>Next</button>
 
-        <div className='home-about-section'>
-          <h2 className="home-about-section-title">About Us</h2>
-          <p className="home-about-section-description">Heeds Foundation, founded by students from Nagpur City, is a non-profit organization dedicated to empowering communities through education and addressing social issues and instabilities. With a mission to promote communities through education, healthcare, sustainable development, and humanitarian response, Heeds Foundation aims to provide support, resources, and assistance to those in need. The organization was established by a group of passionate students who identified various social challenges and decided to take action by forming Heeds Foundation. Through their collective efforts, Heeds Foundation strives to create positive change, promote equality, and make a meaningful impact in the lives of individuals and communities.
-            <br /><br />
-            Our primary focus is on promoting quality education for underserved children, ensuring that every child has access to learning opportunities. We believe that education is the key to unlocking a brighter future and creating lasting change. Through our initiatives, we aim to bridge the educational gap, promote resources and scholarships, and ensure equal access to education for all. With a strong commitment to promoting equality and fostering positive change, Heeds Foundation empowers individuals and communities through the transformative power of education.</p>
+        <div className='home-data'>
+          <div className='data-about-home'>
+            <h3 className='home-title'>About Heeds Foundation</h3>
+            <div className='about-component'>
+              <div className='comp'>
+                <img src={healthcare} alt='h=healthcare'></img>
+                <div className='comp-title'>Healthcare</div>
+                <p>we believe that quality healthcare is a fundamental right for all individuals. We are dedicated to promoting accessible and equitable healthcare services, working towards addressing health disparities, and improving overall well-being. Through our initiatives.</p>
+              </div>
+              <div className='comp'>
+                <img src={education} alt='e=education'></img>
+                <div className='comp-title'>Education</div>
+                <p>We believe that education is the key to unlock a brighter future and bring about lasting change, hence we are promoting quality education for underprivileged children, ensuring that every child has access to learning opportunities.</p>
+              </div>
+              <div className='comp'>
+                <img src={empower} alt='e=empower'></img>
+                <div className='comp-title'>Empowerment</div>
+                <p>We believe that potential of every individual is create positive impact make difference. Through our initiatives, we promote empowerment by providing support, resources, and opportunities. We believe that when individuals are empowered, they can overcome obstacles, achieve their goals, and contribute to the betterment of their communities.</p>
+              </div>
+              <div className='comp'>
+                <img src={development} alt='d=development'></img>
+                <div className='comp-title'>Development</div>
+                <p>We believe in the power of sustainable development to create a better future for generations to come. We promote and advocate for sustainable development practices that protect the environment, uplift communities, and drive positive change.</p>
+              </div>
+              <div className='comp'>
+                <img src={support} alt='s=support'></img>
+                <div className='comp-title'>Support</div>
+                <p>We are passionate about providing support to those in need. We believe in the power of compassion and collaboration to create positive change. Through our initiatives, we promote equality and work tirelessly to uplift individuals and communities.</p>
+              </div>
+            </div>
+          </div>
+          <div className='who-we-are'>
+            <h3 className='who-title'>Who We Are</h3>
+            <div className='who-grid'>
+              <div className='who-data'>
+                <p> We are Heeds Foundation, a non-profit organization dedicated to making a positive impact in communities.</p>
+                </div>
+                <div className='who-data'>
+                <p>Our team is comprised of passionate individuals driven by a shared vision of creating a better future.</p>
+                </div>
+                <div className='who-data'>
+                <p>We believe in the power of education, healthcare, sustainable development, and humanitarian response to uplift and empower communities.</p>
+                </div>
+                <div className='who-data'>
+                <p>Our mission is to promote equality, foster positive change, and provide support and resources to those in need.</p>
+                </div>
+                <div className='who-data'>
+                <h3>Heeds Foundation</h3>
+                </div>
+                <div className='who-data'>
+                <p>Through our initiatives, we strive to bridge the educational gap, improve access to healthcare services, drive sustainable development, and respond effectively to humanitarian crises.</p>
+                </div>
+                <div className='who-data'>
+                <p> We collaborate with like-minded organizations, government agencies, and community leaders to maximize our impact and create lasting change.</p>
+                </div>
+                <div className='who-data'>
+                <p> Together, we can empower communities, transform lives, and build a brighter future for all.</p>
+                </div>
+                <div className='who-data'>
+                <p>Join us in our journey of making a difference and be a part of Heeds Foundation's impactful work.</p>
+                </div>
+            </div>
+          </div>
+          <div className='involved'>
+            <h3 className='involved-title'>How to Get Involved/Support Us</h3>
+            <div className='involved-grid'>
+              <div className='involved-datai'>
+                <p><strong>Donate</strong></p>
+                </div>
+                <div className='involved-data'>
+                <p>Your donation can help us to promote education to underserved children. Your donation has the power to empower communities,education ,healthcare access, and sustainable development.</p>
+                </div>
+                <div className='involved-datai'>
+                <p><strong>Volunteer</strong></p>
+                </div>
+                <div className='involved-data'>
+                <p>Join our team of dedicated volunteers to help us make a difference in the lives of underserved children. Visit our website to learn more.</p>
+                </div>
+                <div className='involved-datai'>
+                <p><strong>Spread the word</strong></p>
+                </div>
+                <div className='involved-data'>
+                <p>Help us to raise awareness about the importance of education and the work that we do. Follow us on social media and share our posts with your network.</p>
+                </div>
+                </div>
+          </div>
         </div>
       </div>
     );
