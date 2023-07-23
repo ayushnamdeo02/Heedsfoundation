@@ -4,6 +4,7 @@ import "./event/event.css";
 import image1 from './event/images/event1.jpg';
 import image2 from './event/images/event2.jpg';
 import image3 from './event/images/event3.jpg';
+import image4 from './event/images/event4.jpg';
 import event_head from './event/images/event-head.png';
 
 class Event extends Component {
@@ -23,6 +24,11 @@ class Event extends Component {
         id: 3,
         title: 'Awareness Campaign',
         imageUrl: image3,
+      },
+      {
+        id: 4,
+        title: 'Cleaning Campaign',
+        imageUrl: image4,
       },
       // Add more events here...
     ]

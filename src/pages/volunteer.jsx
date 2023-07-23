@@ -120,7 +120,7 @@ class Volunteer extends Component {
     const today = new Date();
     const selectedDate = new Date(dateOfBirth);
     const isValid = selectedDate <= today;
-    this.setState({ dateOfBirthValid: isValid });
+    this.setState({ dateOfBirth: isValid });
   };
 
   render() {

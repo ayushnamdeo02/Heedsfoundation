@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import { Helmet } from 'react-helmet';
 import "./home/home.css";
 import image1 from '../images/slider-1.jpg';
-import image2 from "../images/slider-2.jpg";
+import image2 from '../images/slider-2.jpg';
+import image8 from '../images/slider-1.jpg';
+import image9 from "../images/slider-2.jpg";
 import image3 from "../images/slider-3.jpg";
 import image4 from "../images/slider-4.jpg";
 import image5 from "../images/slider-5.jpg";
@@ -16,7 +18,7 @@ import support from '../images/support.png';
 
 class Home extends Component {
   state = {
-    images: [image1, image2, image3, image4, image5, image6, image7],
+    images: [image1, image2, image3, image4, image5, image6, image7,image8,image9],
     currentSlide: 0
   };
 
