@@ -61,7 +61,6 @@
   transform: translateY(-50%);
 }
 .container-home .home-data .data-about-home {
-  background: linear-gradient(#ffffff, 0);
   position: relative;
   width: 100%;
   padding-top: 40px;
@@ -106,7 +105,7 @@
 }
 .container-home .home-data .who-we-are .who-title {
   text-align: center;
-  font-size: 30px;
+  font-size: 45px;
   font-weight: bold;
   margin-top: 40px;
 }
@@ -118,17 +117,16 @@
   padding-right: 200px;
 }
 .container-home .home-data .who-we-are .who-grid .who-data {
-  background: linear-gradient(to right, #ffd4b1, #b1d2ff) 50%;
   display: flex;
   align-items: center;
   text-align: center;
-  border: 1px solid #efeded;
+  border: 1px solid black;
   padding: 5px;
   height: 200px;
   width: auto;
 }
 .container-home .home-data .who-we-are .who-grid .who-data p {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 19px;
 }
 .container-home .home-data .who-we-are .who-grid .who-data h3 {
@@ -138,7 +136,6 @@
 }
 .container-home .home-data .involved {
   padding-top: 40px;
-  background-color: rgb(241, 241, 241);
 }
 .container-home .home-data .involved .involved-title {
   text-align: center;
@@ -155,14 +152,13 @@
   padding-bottom: 80px;
 }
 .container-home .home-data .involved .involved-grid .involved-datai {
-  background: linear-gradient(to left, #ffb87e, #63a4ff) 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  border-top: 1px solid #efeded;
-  border-left: 1px solid #efeded;
-  border-bottom: 1px solid #efeded;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
   padding: 5px;
   height: 150px;
   width: auto;
@@ -177,14 +173,14 @@
   color: #000000;
 }
 .container-home .home-data .involved .involved-grid .involved-data {
-  background: linear-gradient(to right, #ffb87e, #63a4ff) 50%;
   display: flex;
   align-items: center;
   text-align: center;
-  border: 1px solid #efeded;
+  border: 1px solid black;
   padding: 5px;
   height: 150px;
   width: auto;
+  border-spacing: 10px;
 }
 .container-home .home-data .involved .involved-grid .involved-data p {
   font-weight: 500;

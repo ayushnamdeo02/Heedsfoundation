@@ -71,7 +71,7 @@
       
       
       .data-about-home{
-        background: linear-gradient(#ffffff,0);
+        
         position: relative;
         width: 100%;
         padding-top: 40px;
@@ -116,9 +116,10 @@
         padding-bottom: 40px;
         .who-title{
           text-align: center;
-          font-size: 30px;
+          font-size: 45px;
           font-weight: bold;
           margin-top: 40px;
+          
         }
         .who-grid{
           
@@ -130,18 +131,18 @@
           
           
           .who-data{
-            background: linear-gradient(to right, #ffd4b1, #b1d2ff)50%;
+            
             display: flex;
             align-items: center;
             text-align: center;
-            border: 1px solid #efeded;
+            border: 1px solid black;
             
             padding: 5px;
             height:200px;
             width: auto;
             
             p{
-              font-weight: 500;
+              font-weight: 600;
               font-size: 19px;
             }
             h3{
@@ -154,7 +155,7 @@
       }
       .involved{
           padding-top: 40px;
-          background-color: rgb(241, 241, 241);
+         
         .involved-title{
           text-align: center;
           font-size: 30px;
@@ -171,14 +172,14 @@
           padding-bottom: 80px;
           
           .involved-datai{
-            background: linear-gradient(to left, #ffb87e, #63a4ff)50%;
+            
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
-            border-top: 1px solid #efeded;
-            border-left: 1px solid #efeded;
-            border-bottom: 1px solid #efeded;
+            border-top: 1px solid black;
+            border-left: 1px solid black;
+            border-bottom: 1px solid black;
             padding: 5px;
             height:150px;
             width: auto;
@@ -194,14 +195,15 @@
             }
           }
           .involved-data{
-            background: linear-gradient(to right, #ffb87e, #63a4ff)50%;
+            
             display: flex;
             align-items: center;
             text-align: center;
-            border: 1px solid #efeded;
+            border: 1px solid black;
             padding: 5px;
             height:150px;
             width: auto;
+            border-spacing: 10px;
             
             p{
               font-weight: 500;
