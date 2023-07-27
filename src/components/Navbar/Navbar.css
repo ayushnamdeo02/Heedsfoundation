@@ -1,31 +1,42 @@
 .navbar-container {
   max-width: 100%;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
   display: flex;
-  align-items: center;
+  border-radius: 50px;
   justify-content: center;
-  background-color: white;
+  background-image: url("../../images/backgroundlight.jpg");
+  background-size: cover; /* Adjust background size as needed */
+  background-repeat: no-repeat;
+  opacity: 80%;
 }
 .navbar-container .navbar-left {
   display: flex;
-  align-items: center;
   justify-content: flex-start;
 }
 .navbar-container .navbar-left .navbar-brand img {
-  width: 200px;
+  margin-left: 10px;
+  width: 170px;
   height: auto;
 }
 .navbar-container .navbar-mid {
+  align-self: last baseline;
   margin-left: 250px;
   display: flex;
   align-items: center;
   flex-grow: 1;
   justify-content: space-between;
+  font-weight: 700;
 }
 .navbar-container .navbar-mid .menu-button {
   display: none;
   background: none;
   border: none;
   cursor: pointer;
+  margin-top: -50px;
+  margin-left: -40px;
 }
 .navbar-container .navbar-mid .menu-button span {
   display: block;
