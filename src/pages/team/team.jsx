@@ -148,10 +148,10 @@ class Team extends Component {
             <h4 className="title">{member.title}</h4>
           </div>
           <ul className="social">
-            <li><a href={member.socialLinks.facebook} className="fa fa-facebook" aria-hidden="true"></a></li>
-            <li><a href={member.socialLinks.twitter} className="fa fa-twitter" aria-hidden="true"></a></li>
-            <li><a href={member.socialLinks.Instagram} className="fa fa-instagram" aria-hidden="true"></a></li>
-            <li><a href={member.socialLinks.linkedin} className="fa fa-linkedin"></a></li>
+            <li><a href={member.socialLinks.facebook} className="fa fa-facebook" aria-hidden="true" alt="facebook"></a></li>
+            <li><a href={member.socialLinks.twitter} className="fa fa-twitter" aria-hidden="true" alt="twitter"></a></li>
+            <li><a href={member.socialLinks.Instagram} className="fa fa-instagram" aria-hidden="true" alt="instagram"></a></li>
+            <li><a href={member.socialLinks.linkedin} className="fa fa-linkedin" alt="linkedin"></a></li>
           </ul>
         </div>
       ))}
@@ -160,17 +160,17 @@ class Team extends Component {
             {cardData.map((data, index) => (
               <div key={index} className="card">
                 <div className='image-card'>
-                <img className="image" src={data.imageUrl} alt="" ></img></div>
+                <img className="image" src={data.imageUrl} alt="sds" ></img></div>
                 <div className="title">{data.name}</div>
                 <div className="position">{data.position}</div>
 
                 <div className="card-content">
                   
                   <ul className="social-links">
-            <li><a href={data.socialLinks.facebook} className="fa fa-facebook" aria-hidden="true"></a></li>
-            <li><a href={data.socialLinks.Instagram} className="fa fa-instagram" aria-hidden="true"></a></li>
-            <li><a href={data.socialLinks.linkedin} className="fa fa-linkedin"></a></li>
-            <li><a href={data.socialLinks.twitter} className="fa fa-twitter" aria-hidden="true"></a></li>
+                  <li><a href={data.socialLinks.facebook} className="fa fa-facebook" aria-hidden="true" alt="facebook"></a></li>
+            <li><a href={data.socialLinks.twitter} className="fa fa-twitter" aria-hidden="true" alt="twitter"></a></li>
+            <li><a href={data.socialLinks.Instagram} className="fa fa-instagram" aria-hidden="true" alt="instagram"></a></li>
+            <li><a href={data.socialLinks.linkedin} className="fa fa-linkedin" alt="linkedin"></a></li>
           </ul>
                 </div>
               </div>
