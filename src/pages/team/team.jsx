@@ -50,7 +50,7 @@ class Team extends Component {
       },
       {
         name: 'Mr.Kartik Bhandari',
-        title: 'Secratery',
+        title: 'Secretary',
         imageURL: kartik,
         socialLinks: {
           facebook: '/',
@@ -149,16 +149,16 @@ class Team extends Component {
               </div>
               <ul className="social">
                 <li>
-                  <a href={member.socialLinks.facebook} className="fa fa-facebook" aria-label="Facebook">Facebook</a>
+                  <a href={member.socialLinks.facebook} className="fa fa-facebook">Facebook</a>
                 </li>
                 <li>
-                  <a href={member.socialLinks.twitter} className="fa fa-twitter" aria-label="Twitter">Twitter</a>
+                  <a href={member.socialLinks.twitter} className="fa fa-twitter">Twitter</a>
                 </li>
                 <li>
-                  <a href={member.socialLinks.Instagram} className="fa fa-instagram" aria-label="Instagram">Instagram</a>
+                  <a href={member.socialLinks.Instagram} className="fa fa-instagram" >Instagram</a>
                 </li>
                 <li>
-                  <a href={member.socialLinks.linkedin} className="fa fa-linkedin" aria-label="LinkedIn">LinkedIn</a>
+                  <a href={member.socialLinks.linkedin} className="fa fa-linkedin">LinkedIn</a>
                 </li>
               </ul>
             </div>
@@ -175,16 +175,16 @@ class Team extends Component {
               <div className="card-content">
                 <ul className="social-links">
                   <li>
-                    <a href={data.socialLinks.facebook} className="fa fa-facebook" aria-label="Facebook">Facebook</a>
+                    <a href={data.socialLinks.facebook} className="fa fa-facebook">Facebook</a>
                   </li>
                   <li>
-                    <a href={data.socialLinks.twitter} className="fa fa-twitter" aria-label="Twitter">Twitter</a>
+                    <a href={data.socialLinks.twitter} className="fa fa-twitter">Twitter</a>
                   </li>
                   <li>
-                    <a href={data.socialLinks.Instagram} className="fa fa-instagram" aria-label="Instagram">Instagram</a>
+                    <a href={data.socialLinks.Instagram} className="fa fa-instagram" >Instagram</a>
                   </li>
                   <li>
-                    <a href={data.socialLinks.linkedin} className="fa fa-linkedin" aria-label="LinkedIn">LinkedIn</a>
+                    <a href={data.socialLinks.linkedin} className="fa fa-linkedin">LinkedIn</a>
                   </li>
                 </ul>
               </div>
