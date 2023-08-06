@@ -148,11 +148,20 @@ class Team extends Component {
             <h4 className="title">{member.title}</h4>
           </div>
           <ul className="social">
-            <li><a href={member.socialLinks.facebook} className="fa fa-facebook" aria-hidden="true" alt="facebook"></a></li>
-            <li><a href={member.socialLinks.twitter} className="fa fa-twitter" aria-hidden="true" alt="twitter"></a></li>
-            <li><a href={member.socialLinks.Instagram} className="fa fa-instagram" aria-hidden="true" alt="instagram"></a></li>
-            <li><a href={member.socialLinks.linkedin} className="fa fa-linkedin" alt="linkedin"></a></li>
-          </ul>
+  <li>
+    <a href={member.socialLinks.facebook} className="fa fa-facebook" aria-label="Facebook"></a>
+  </li>
+  <li>
+    <a href={member.socialLinks.twitter} className="fa fa-twitter" aria-label="Twitter"></a>
+  </li>
+  <li>
+    <a href={member.socialLinks.Instagram} className="fa fa-instagram" aria-label="Instagram"></a>
+  </li>
+  <li>
+    <a href={member.socialLinks.linkedin} className="fa fa-linkedin" aria-label="LinkedIn"></a>
+  </li>
+</ul>
+
         </div>
       ))}
     </div>
@@ -166,12 +175,21 @@ class Team extends Component {
 
                 <div className="card-content">
                   
-                  <ul className="social-links">
-                  <li><a href={data.socialLinks.facebook} className="fa fa-facebook" aria-hidden="true" alt="facebook"></a></li>
-            <li><a href={data.socialLinks.twitter} className="fa fa-twitter" aria-hidden="true" alt="twitter"></a></li>
-            <li><a href={data.socialLinks.Instagram} className="fa fa-instagram" aria-hidden="true" alt="instagram"></a></li>
-            <li><a href={data.socialLinks.linkedin} className="fa fa-linkedin" alt="linkedin"></a></li>
-          </ul>
+                <ul className="social-links">
+  <li>
+    <a href={data.socialLinks.facebook} className="fa fa-facebook" aria-label="Facebook"></a>
+  </li>
+  <li>
+    <a href={data.socialLinks.twitter} className="fa fa-twitter" aria-label="Twitter"></a>
+  </li>
+  <li>
+    <a href={data.socialLinks.Instagram} className="fa fa-instagram" aria-label="Instagram"></a>
+  </li>
+  <li>
+    <a href={data.socialLinks.linkedin} className="fa fa-linkedin" aria-label="LinkedIn"></a>
+  </li>
+</ul>
+
                 </div>
               </div>
             ))}
