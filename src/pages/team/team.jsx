@@ -129,6 +129,7 @@ class Team extends Component {
         }
       },
       // Add more card data objects
+      
     ];
     return (
       <div className='team-page-main'>
@@ -152,7 +153,7 @@ class Team extends Component {
                   <a href={member.socialLinks.facebook} className="fa fa-facebook" aria-label="Facebook"></a>
                 </li>
                 <li>
-                  <a href={member.socialLinks.twitter} className="fa fa-twitter" aria-label="Twitter"></a>
+                  <a href={member.socialLinks.twitter} className="fa fa-twitter" aria-label="Twitter" ></a>
                 </li>
                 <li>
                   <a href={member.socialLinks.Instagram} className="fa fa-instagram" aria-label="Instagram"></a>

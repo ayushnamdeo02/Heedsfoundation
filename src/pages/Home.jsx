@@ -15,6 +15,8 @@ import education from '../images/education.png';
 import empower from '../images/empower.png';
 import development from '../images/development.png';
 import support from '../images/support.png';
+import vairagi from './assets/vairagi.jpg';
+import dawa from './assets/dawa.jpg';
 
 class Home extends Component {
   state = {
@@ -67,7 +69,17 @@ class Home extends Component {
         contactType: 'customer support',
       },
     };
-
+    const partners = [
+      {
+        name: 'Vairagi Learning',
+        imageUrl:vairagi,
+      },
+      {
+        name: 'Janheet Generics',
+        imageUrl:dawa,
+      },
+      // Add more partners here
+    ];
     return (
       <div className='container-home'>
         <Helmet>
@@ -175,6 +187,19 @@ class Home extends Component {
                 </div>
                 </div>
           </div>
+          <div className='partner-data'>
+      <h2 className='title-partner'>Our Partners</h2>
+      <div className='home-partners'>
+      {partners.map((partner, index) => (
+            <div key={index} className="card">
+              <div className='image-card'>
+                <img className="image" src={partner.imageUrl} alt="sds" ></img>
+              </div>
+              <div className="title">{partner.name}</div>
+            </div>
+          ))}
+      </div>
+    </div>
         </div>
       </div>
     );
