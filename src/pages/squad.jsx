@@ -21,7 +21,7 @@ class Squads extends Component {
           <Link to="/about"><h6><b>To Know More</b></h6></Link>
         </div>
         <div className="circle-buttons">
-        <Link className="circle-button-1" to="/"><div>
+        <Link className="circle-button-1" to="/team"><div>
           <img src={teamimg} alt='team'></img>
           <h4 className='heading-btn-1'>Our Teams</h4>
           </div>

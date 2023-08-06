@@ -12,6 +12,8 @@ import Work from './pages/work';
 import Event from './pages/event';
 import Squads from './pages/squad';
 import Team from "./pages/team/team";
+import 'font-awesome/css/font-awesome.min.css';
+
 
 class App extends Component {
   render() {
