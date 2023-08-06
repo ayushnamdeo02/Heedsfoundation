@@ -15,7 +15,7 @@ class Contact extends Component {
       email: '',
       phone: '',
       message: '',
-      isSubmitted: false
+      isSubmitted: false,
     };
   }
 
@@ -25,14 +25,14 @@ class Contact extends Component {
     const { name, email, phone, message } = this.state;
 
     const formData = {
-      name,
+      firstname: name,
       email,
       phone,
-      message
+      subject: message,
     };
 
     axios
-      .post('https://sheetdb.io/api/v1/66yq7poktawt9', formData)
+      .post('https://formsubmit.co/20945a60b240b0851fe221d0c34f887f', formData)
       .then((response) => {
         // Handle the response from the backend if needed
         console.log(response.data);
@@ -48,7 +48,7 @@ class Contact extends Component {
       name: '',
       email: '',
       phone: '',
-      message: ''
+      message: '',
     });
   };
 
@@ -58,13 +58,16 @@ class Contact extends Component {
     return (
       <div className="container-contact">
         <Helmet>
-          <meta name="description" content="Get in touch with Heeds Foundation. Contact us for any inquiries, collaborations, or assistance. We are here to help you. Connect with us through phone, email, or social media." />
+          <meta
+            name="description"
+            content="Get in touch with Heeds Foundation. Contact us for any inquiries, collaborations, or assistance. We are here to help you. Connect with us through phone, email, or social media."
+          />
         </Helmet>
         <div className="partition-contact">
           <div className="partition-left">
-            <img src={logo} alt='logo' />
+            <img src={logo} alt="logo" />
             <div className="contact-info">
-              <h6>Contact No.</h6>
+            <h6>Contact No.</h6>
               <p>Mr. Pratik Meshram  +91 8788411441</p>
               <p>Mr. Ayush Namdeo    +91 7987210406</p>
               <p>Mr.Gaurav Borghare  +91 8208048191</p>

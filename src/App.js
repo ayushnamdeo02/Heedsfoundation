@@ -12,7 +12,6 @@ import Work from './pages/work';
 import Event from './pages/event';
 import Squads from './pages/squad';
 import Team from "./pages/team/team";
-import Members from "./pages/Members/members.jsx";
 
 class App extends Component {
   render() {
@@ -33,7 +32,6 @@ class App extends Component {
           <Route path='/event' component={Event} />
           <Route path='/squad' component={Squads} />
           <Route path='/team' component={Team} />
-          <Route path='/members' component={Members} />
 
           <Contact />
           <Footer />

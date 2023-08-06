@@ -3,6 +3,8 @@ import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import "./squad/squad.css";
 import squad_head from "./squad/head-squad.png";
+import partnerimg from "./assets/ourpartners.png";
+import teamimg from "./assets/ourteams.png";
 
 class Squads extends Component {
   render() {
@@ -16,14 +18,20 @@ class Squads extends Component {
         <h2 className="page-title">Squads</h2>
         <div className="squad-container">
           <p>Welcome to Heeds Foundation, a dynamic organization driven by a passionate team, dedicated volunteers, and impactful partnerships. Our mission is to empower communities through education, healthcare, sustainable development, and humanitarian response. With a strong focus on creating positive change, we work hand in hand with volunteers who bring their skills, compassion, and energy to our initiatives.</p>
-          <h6>To Know More</h6>
+          <Link to="/about"><h6><b>To Know More</b></h6></Link>
         </div>
         <div className="circle-buttons">
-          <Link className="circle-button-1" to="/"></Link>
-          <Link className="circle-button-2" to="/members"></Link>
-          <Link className="circle-button-3" to="/"></Link>
+        <Link className="circle-button-1" to="/"><div>
+          <img src={teamimg}></img>
+          <h4 className='heading-btn-1'>Our Teams</h4>
+          </div>
+          </Link>
+          <Link className="circle-button-2" to="/"><div>
+          <img src={partnerimg}></img>
+          <h4 className='heading-btn-2'>Our Partners</h4>
+          </div></Link>
         </div>
-        <br></br>
+
       </div>
     );
   }
