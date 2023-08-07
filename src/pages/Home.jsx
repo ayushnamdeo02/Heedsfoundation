@@ -52,6 +52,20 @@ class Home extends Component {
     }));
   };
 
+  onTouchStart = (e) => {
+    this.touchStartX = e.touches[0].clientX;
+  };
+
+  onTouchEnd = (e) => {
+    const touchEndX = e.changedTouches[0].clientX;
+    const touchDiff = touchEndX - this.touchStartX;
+
+    if (touchDiff > 50) {
+      this.prevSlide();
+    } else if (touchDiff < -50) {
+      this.nextSlide();
+    }
+  };
   render() {
     const { images, currentSlide } = this.state;
 
@@ -88,7 +102,8 @@ class Home extends Component {
           <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
         </Helmet>
 
-        <div className='slider'>
+        <div className='slider' onTouchStart={this.onTouchStart}
+          onTouchEnd={this.onTouchEnd}>
           {images.map((image, index) => (
             <img
               key={index}

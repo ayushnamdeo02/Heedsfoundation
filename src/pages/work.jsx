@@ -13,7 +13,7 @@ class Work extends Component {
           <meta name="description" content="Explore our portfolio of projects and initiatives. Learn how we are making a difference in education, healthcare, sustainable development, and more." />
         </Helmet>
 
-        <img src={header} alt="Header" />
+        <img className='work-header-img' src={header} alt="Header" />
 
         <div className="title">Our Works</div>
         <div className="work-content">

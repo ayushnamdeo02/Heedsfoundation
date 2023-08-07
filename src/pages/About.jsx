@@ -11,7 +11,7 @@ class About extends Component {
           <title>About Us - Heeds Foundation</title>
           <meta name="description" content="Learn about Heeds Foundation, a non-profit organization dedicated to empowering communities through education and addressing social issues. Discover our mission, initiatives, and vision for a better future." />
         </Helmet>
-        <img src={header} alt='header' />
+        <img className="header-about-img"src={header} alt='header' />
         <div className="about-us" id='aboutus'>
           <h2 className="section-title">About Us</h2>
           <div className='container-about'>

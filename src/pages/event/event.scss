@@ -1,9 +1,9 @@
 .event-container{
-    img{
+  .event-header-img{
         max-width: 100%;
         position: relative;
         max-height: 500px;
-    }
+  }
     .title{
         position: relative;
         margin-top: -350px;
@@ -75,15 +75,15 @@
 @media (max-width: 480px) {
   .event-container{
     display:block;
-    img{
-      max-width: 100%;
+    .event-header-img{
+      display: none;
     }
     .title{
       font-size: 30px;
       position: relative;
-        margin-top: -100px;
-        color: white;
-        width: 700;
+        margin-top: 50px;
+        color: #000;
+        width: 600;
         text-align: center;
     }
     .info-event{

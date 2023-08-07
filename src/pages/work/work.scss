@@ -1,6 +1,10 @@
 .work-container{
     display: contents;
     justify-content: center;
+    .work-header-img{
+        max-width: 100%;
+        position:relative;
+    }
     img{
         max-width: 100%;
         position:relative;
@@ -85,17 +89,22 @@
   .work-container{
     display:block;
     max-width: 100%;
+    .work-header-img{
+      display: none;
+  }
     img{
       max-width: 100%;
     }
     .title{
-      margin-top: -90px;
       font-size: 30px;
+      margin-top: 30px;
+      color: #000;
+      font-weight: 600;
     }
     .work-content{
       margin-left: 20px;
       margin-right: 20px;
-      margin-top: -25px;
+      margin-top: 15px;
       .work-content-heading{
         font-size: 25px;
       }

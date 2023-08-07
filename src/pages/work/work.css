@@ -2,6 +2,10 @@
   display: contents;
   justify-content: center;
 }
+.work-container .work-header-img {
+  max-width: 100%;
+  position: relative;
+}
 .work-container img {
   max-width: 100%;
   position: relative;
@@ -77,17 +81,22 @@
     display: block;
     max-width: 100%;
   }
+  .work-container .work-header-img {
+    display: none;
+  }
   .work-container img {
     max-width: 100%;
   }
   .work-container .title {
-    margin-top: -90px;
     font-size: 30px;
+    margin-top: 30px;
+    color: #000;
+    font-weight: 600;
   }
   .work-container .work-content {
     margin-left: 20px;
     margin-right: 20px;
-    margin-top: -25px;
+    margin-top: 15px;
   }
   .work-container .work-content .work-content-heading {
     font-size: 25px;

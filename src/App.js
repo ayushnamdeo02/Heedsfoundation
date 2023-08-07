@@ -27,7 +27,7 @@ class App extends Component {
           </Helmet>
 
           <Navbar />
-
+          <div className='donate'><a href='https://docs.google.com/forms/d/1EuulzQnaxthd7C1Hw70vxKBKXwabIvxbNZwXNzYYhsI/edit?usp=drivesdk '>Donate</a></div>
           <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
           <Route path="/contact" component={Volunteer} />

@@ -1,4 +1,4 @@
-.about-main-container img {
+.about-main-container .header-about-img {
   max-width: 100%;
   position: relative;
 }
@@ -62,7 +62,8 @@
 }
 
 @media only screen and (max-width: 480px) {
-  .about-main-container img {
+  .about-main-container .header-about-img {
+    display: none;
     max-width: 100%;
   }
   .about-main-container .about-us {
@@ -70,11 +71,12 @@
     display: block;
   }
   .about-main-container .about-us .section-title {
-    color: white;
+    color: rgb(0, 0, 0);
     position: relative;
     font-size: 30px;
     text-align: center;
-    margin-top: -70px;
+    margin-top: 50px;
+    font-weight: 600;
   }
   .about-main-container .about-us .container-about {
     margin-left: 20px;

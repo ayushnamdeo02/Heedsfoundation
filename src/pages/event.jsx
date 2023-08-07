@@ -43,7 +43,7 @@ class Event extends Component {
           <title>Events - Heeds Foundation</title>
           <meta name="description" content="Discover the latest events organized by Heeds Foundation. Join us in our efforts to make a positive impact through cloth donations, education campaigns, awareness campaigns, and more. Together, let's create a brighter future for children and empower communities." />
         </Helmet>
-        <img src={event_head} alt='header' />
+        <img className='event-header-img' src={event_head} alt='header' />
         <div className="title">Events</div>
         <div className='info-event'>
           <p>Welcome to the Heeds Foundation's event! Join us as we embark on a journey of transforming lives through the power of education, healthcare, and sustainable development. This event is dedicated to creating a brighter future for children, ensuring they have access to quality education that opens doors of opportunity. We will also explore the importance of healthcare in nurturing their well-being and discuss sustainable development practices to safeguard their environment.</p>

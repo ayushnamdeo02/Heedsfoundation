@@ -5,6 +5,8 @@ import "./squad/squad.css";
 import squad_head from "./squad/head-squad.png";
 import partnerimg from "./assets/ourpartners.png";
 import teamimg from "./assets/ourteams.png";
+import intern from './assets/intern.jpg';
+import hire from './assets/hire.jpg';
 
 class Squads extends Component {
   render() {
@@ -14,7 +16,7 @@ class Squads extends Component {
           <title>Squads - Heeds Foundation</title>
           <meta name="description" content="Explore the passionate teams and dedicated volunteers of Heeds Foundation. Our squads are committed to making a positive impact through education, healthcare, sustainable development, and humanitarian response. Join us in our mission to empower communities and create a better future." />
         </Helmet>
-        <img src={squad_head} alt='head'></img>
+        <img className="header-squad" src={squad_head} alt='head'></img>
         <h2 className="page-title">Squads</h2>
         <div className="squad-container">
           <p>Welcome to Heeds Foundation, a dynamic organization driven by a passionate team, dedicated volunteers, and impactful partnerships. Our mission is to empower communities through education, healthcare, sustainable development, and humanitarian response. With a strong focus on creating positive change, we work hand in hand with volunteers who bring their skills, compassion, and energy to our initiatives.</p>
@@ -22,16 +24,24 @@ class Squads extends Component {
         </div>
         <div className="circle-buttons">
         <Link className="circle-button-1" to="/team"><div>
-          <img src={teamimg} alt='team'></img>
+          <img className="team-img" src={teamimg} alt='team'></img>
           <h4 className='heading-btn-1'>Our Teams</h4>
           </div>
           </Link>
           <Link className="circle-button-2" to="/partners"><div>
-          <img src={partnerimg} alt='partner'></img>
+          <img className="partner-img" src={partnerimg} alt='partner'></img>
           <h4 className='heading-btn-2'>Our Partners</h4>
           </div></Link>
         </div>
+        <div className='opp-squad'>
+          <div className='opp-title'>Foundation Provide Oppourtunities</div>
+          <div className='opp-elements'>
+            <img className='opp-img' src={intern} alt='job1'></img>
+            <img className='opp-img' src={hire} alt='job2'></img>
 
+          </div>
+
+        </div>
       </div>
     );
   }

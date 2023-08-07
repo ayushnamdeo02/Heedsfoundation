@@ -1,4 +1,4 @@
-.event-container img {
+.event-container .event-header-img {
   max-width: 100%;
   position: relative;
   max-height: 500px;
@@ -69,15 +69,15 @@
   .event-container {
     display: block;
   }
-  .event-container img {
-    max-width: 100%;
+  .event-container .event-header-img {
+    display: none;
   }
   .event-container .title {
     font-size: 30px;
     position: relative;
-    margin-top: -100px;
-    color: white;
-    width: 700;
+    margin-top: 50px;
+    color: #000;
+    width: 600;
     text-align: center;
   }
   .event-container .info-event {

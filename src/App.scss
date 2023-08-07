@@ -1,0 +1,43 @@
+body {
+    background-color: white;
+  }
+  a {
+    text-decoration: none; // Remove underline from links
+    color: inherit; // Inherit the text color from the parent element
+  }
+  
+  a:visited {
+    color: inherit; // Inherit the text color for visited links as well
+  }
+  
+  /* Add the "donate" button styles */
+  .donate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    writing-mode: vertical-lr;
+    bottom: 50%; // Adjust the position from the bottom as needed
+    right: 0px; // Adjust the position from the right as needed
+    width: 40px; // Adjust the width of the button as needed
+    height: 120px; // Adjust the height of the button as needed
+    background-color: red; // Set the background color of the button
+    color: white; // Set the text color of the button
+    font-size: 20px; // Set the font size of the button text
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 9999; // Set a high z-index to make the button appear above other elements
+  
+    &:hover {
+      background-color: #2fbd1c;
+      color: #000; // Change the background color on hover
+    }
+  }
+  @media (max-width:480px){
+    .donate{
+        height: 90px;
+        width: 30px;
+        font-size: 17px;
+    }
+  }
+  

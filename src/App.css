@@ -1,4 +1,43 @@
 body {
-    background-color: white;
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
+}
+
+/* Add the "donate" button styles */
+.donate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  writing-mode: vertical-lr;
+  bottom: 50%;
+  right: 0px;
+  width: 40px;
+  height: 120px;
+  background-color: red;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 9999;
+}
+.donate:hover {
+  background-color: #2fbd1c;
+  color: #000;
+}
+
+@media (max-width: 480px) {
+  .donate {
+    height: 90px;
+    width: 30px;
+    font-size: 17px;
   }
-  
+}/*# sourceMappingURL=App.css.map */
