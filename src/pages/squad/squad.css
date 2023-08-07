@@ -150,4 +150,25 @@
     width: 300px;
     height: 300px;
   }
+  .squad-page .opp-squad {
+    max-width: 100%;
+    align-items: center;
+  }
+  .squad-page .opp-squad .opp-title {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .squad-page .opp-squad .opp-elements {
+    margin-top: auto;
+    max-width: 100%;
+    margin-left: 18px;
+    margin-right: 50px;
+    display: block;
+    gap: 30px;
+  }
+  .squad-page .opp-squad .opp-elements .opp-img {
+    margin-top: 50px;
+    max-width: 350px;
+    box-shadow: -5px -5px 10px 5px rgba(44, 44, 44, 0.5);
+  }
 }/*# sourceMappingURL=squad.css.map */
