@@ -60,19 +60,17 @@ class Volunteer extends Component {
       address: address,
       submit: 'Yes',
     };
-
     try {
-      const response1 = await axios.post('https://formsubmit.co/20945a60b240b0851fe221d0c34f887f', formData);
+    const response1 = await axios.post('https://formsubmit.co/20945a60b240b0851fe221d0c34f887f', formData);
 
-      if (response1.status === 200) {
-        console.log('Email sent successfully!');
-      } else {
-        console.error('Email sending failed.');
-      }
-    } catch (error) {
-      console.error('Error sending email:', error);
+    if (response1.status === 200) {
+      console.log('Email sent successfully!');
+    } else {
+      console.error('Email sending failed.');
     }
-
+  } catch (error) {
+    console.error('Error sending email:', error);
+  }
     try {
       const response = await axios.post(
         'https://sheetdb.io/api/v1/9hpyl1zaqyaku',
@@ -134,6 +132,10 @@ class Volunteer extends Component {
     const isValid = selectedDate <= today;
     this.setState({ dateOfBirthValid: isValid });
   };
+  handleJoinWhatsAppGroup = () => {
+    // Open the WhatsApp group link in a new tab/window
+    window.open('https://chat.whatsapp.com/JSrX40coNHb7EHSn556Wda', '_blank');
+  };
 
   render() {
     const {
@@ -152,7 +154,7 @@ class Volunteer extends Component {
 
     return (
       <div className="volunteer-container">
-        <Helmet>
+         <Helmet>
           <title>Join Heeds Foundation Family</title>
           <meta name="description" content="Become a volunteer and join the Heeds Foundation family. Collaborate, promote equality, and make a difference in the community. Sign up now!" />
         </Helmet>
@@ -260,7 +262,7 @@ class Volunteer extends Component {
               </select>
             </div>
 
-            <button type="submit">Submit</button>
+            <button type="submit" onClick={this.handleJoinWhatsAppGroup}>Submit</button>
           </div>
         </form>
       </div>

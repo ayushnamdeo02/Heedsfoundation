@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Helmet } from 'react-helmet';
-import axios from 'axios';
+import emailjs from 'emailjs-com'; // Import the EmailJS library
 import './contact/contact.css';
 import logo from '../images/logobgclear.png';
 import linkedin from '../images/linkedin-logo.png';
@@ -24,19 +24,27 @@ class Contact extends Component {
 
     const { name, email, phone, message } = this.state;
 
-    const formData = {
-      firstname: name,
-      email,
-      phone,
-      subject: message,
+    const templateParams = {
+      from_name: name,
+      from_email: email,
+      number:phone,
+      to_name: name, // Replace with recipient's name
+      message: message,
     };
 
     try {
-      const response = await axios.post('https://formsubmit.co/20945a60b240b0851fe221d0c34f887f', formData);
-      console.log(response.data);
+      // Replace with your EmailJS service ID and template ID
+      const response = await emailjs.send(
+        'volunteer',
+        'volunteer-temp',
+        templateParams,
+        'kf4Jt-CYJzwGDc8vk'
+      );
+
+      console.log('Email sent:', response);
       this.setState({ isSubmitted: true });
     } catch (error) {
-      console.error(error);
+      console.error('Error sending email:', error);
     }
 
     this.setState({
