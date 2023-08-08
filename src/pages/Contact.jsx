@@ -19,7 +19,7 @@ class Contact extends Component {
     };
   }
 
-  handleSubmit = (e) => {
+  handleSubmit = async (e) => {
     e.preventDefault();
 
     const { name, email, phone, message } = this.state;
@@ -31,19 +31,14 @@ class Contact extends Component {
       subject: message,
     };
 
-    axios
-      .post('https://formsubmit.co/20945a60b240b0851fe221d0c34f887f', formData)
-      .then((response) => {
-        // Handle the response from the backend if needed
-        console.log(response.data);
-        this.setState({ isSubmitted: true }); // Set submission status to true
-      })
-      .catch((error) => {
-        // Handle any errors that occur during the request
-        console.error(error);
-      });
+    try {
+      const response = await axios.post('https://formsubmit.co/20945a60b240b0851fe221d0c34f887f', formData);
+      console.log(response.data);
+      this.setState({ isSubmitted: true });
+    } catch (error) {
+      console.error(error);
+    }
 
-    // Reset form fields after submission
     this.setState({
       name: '',
       email: '',
@@ -67,7 +62,7 @@ class Contact extends Component {
           <div className="partition-left">
             <img src={logo} alt="logo" />
             <div className="contact-info">
-            <h6>Contact No.</h6>
+              <h6>Contact No.</h6>
               <p>Mr. Pratik Meshram  +91 8788411441</p>
               <p>Mr. Ayush Namdeo    +91 7987210406</p>
               <p>Mr.Gaurav Borghare  +91 8208048191</p>

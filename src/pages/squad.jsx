@@ -23,24 +23,25 @@ class Squads extends Component {
           <Link to="/about"><h6><b>To Know More</b></h6></Link>
         </div>
         <div className="circle-buttons">
-        <Link className="circle-button-1" to="/team"><div>
-          <img className="team-img" src={teamimg} alt='team'></img>
-          <h4 className='heading-btn-1'>Our Teams</h4>
-          </div>
+          <Link className="circle-button-1" to="/team">
+            <div>
+              <img className="team-img" src={teamimg} alt='team'></img>
+              <h4 className='heading-btn-1'>Our Teams</h4>
+            </div>
           </Link>
-          <Link className="circle-button-2" to="/partners"><div>
-          <img className="partner-img" src={partnerimg} alt='partner'></img>
-          <h4 className='heading-btn-2'>Our Partners</h4>
-          </div></Link>
+          <Link className="circle-button-2" to="/partners">
+            <div>
+              <img className="partner-img" src={partnerimg} alt='partner'></img>
+              <h4 className='heading-btn-2'>Our Partners</h4>
+            </div>
+          </Link>
         </div>
         <div className='opp-squad'>
-          <div className='opp-title'>Foundation Provide Oppourtunities</div>
+          <div className='opp-title'>Foundation Provides Opportunities</div>
           <div className='opp-elements'>
             <img className='opp-img' src={intern} alt='job1'></img>
             <img className='opp-img' src={hire} alt='job2'></img>
-
           </div>
-
         </div>
       </div>
     );

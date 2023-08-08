@@ -208,7 +208,7 @@ class Home extends Component {
       {partners.map((partner, index) => (
             <div key={index} className="card">
               <div className='image-card'>
-                <img className="image" src={partner.imageUrl} alt="sds" ></img>
+                <img className="image" src={partner.imageUrl} alt={partner.name} ></img>
               </div>
               <div className="title">{partner.name}</div>
             </div>

@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import './team.css';
 import headerimg from "../assets/header-work.png";
 import kartik from "../assets/kartik.jpg";
-import ayush from '../assets/ayush.jpg' ;  
-import gaurav from '../assets/gaurav.jpg' ;
+import ayush from '../assets/ayush.jpg';
+import gaurav from '../assets/gaurav.jpg';
 import pratik from '../assets/pratik.jpg';
 import shivam from "../assets/shivam.jpg";
 import mayuri from "../assets/mayuri.jpg";
@@ -11,9 +11,9 @@ import anish from "../assets/anish.jpg";
 import dhiraj from "../assets/dhiraj.jpg";
 import sudarshan from "../assets/sudarshan.jpg";
 import bahvesh from "../assets/bhavesh.jpg";
+
 class Team extends Component {
   render() {
-
     const teamMembers = [
       {
         name: 'Mr.Pratik Meshram',
@@ -72,11 +72,12 @@ class Team extends Component {
       },
       // Add more team members here if needed
     ];
+
     const cardData = [
       {
         imageUrl: anish,
-        name:"Mr. Anish S. Jha",
-        position:"Event Head",
+        name: "Mr. Anish S. Jha",
+        position: "Event Head",
         socialLinks: {
           facebook: '/',
           twitter: '/',
@@ -86,8 +87,8 @@ class Team extends Component {
       },
       {
         imageUrl: bahvesh,
-        name:"Mr.Bhavesh Vaidya",
-        position:"Executive Head",
+        name: "Mr.Bhavesh Vaidya",
+        position: "Executive Head",
         socialLinks: {
           facebook: '/',
           twitter: '/',
@@ -97,8 +98,8 @@ class Team extends Component {
       },
       {
         imageUrl: mayuri,
-        name:"Ms.Mayuri Kamdi",
-        position:"Marketing Head",
+        name: "Ms.Mayuri Kamdi",
+        position: "Marketing Head",
         socialLinks: {
           facebook: '/',
           twitter: '/',
@@ -108,8 +109,8 @@ class Team extends Component {
       },
       {
         imageUrl: sudarshan,
-        name:"Mr.Sudarshan Tiwari",
-        position:"Design Head",
+        name: "Mr.Sudarshan Tiwari",
+        position: "Design Head",
         socialLinks: {
           facebook: '/',
           twitter: '/',
@@ -119,8 +120,8 @@ class Team extends Component {
       },
       {
         imageUrl: dhiraj,
-        name:"Mr.Dhiraj Patil",
-        position:"PR Head",
+        name: "Mr.Dhiraj Patil",
+        position: "PR Head",
         socialLinks: {
           facebook: '/',
           twitter: '/',
@@ -129,8 +130,8 @@ class Team extends Component {
         }
       },
       // Add more card data objects
-      
     ];
+
     return (
       <div className='team-page-main'>
         <div className='header-img'><img src={headerimg} alt='header'></img></div>
@@ -198,6 +199,3 @@ class Team extends Component {
 }
 
 export default Team;
-
-
-
