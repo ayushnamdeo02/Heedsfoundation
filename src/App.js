@@ -26,7 +26,7 @@ class App extends Component {
           </Helmet>
 
           <Navbar />
-          <div className='donate'><a href='https://docs.google.com/forms/d/1EuulzQnaxthd7C1Hw70vxKBKXwabIvxbNZwXNzYYhsI/edit?usp=drivesdk '>Donate</a></div>
+          <div className='donate'><a href='https://cosmofeed.com/vp/64d242bd05406b001e677509'>Donate</a></div>
           <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
           <Route path="/contact" component={Volunteer} />
@@ -35,7 +35,7 @@ class App extends Component {
           <Route path='/squad' component={Squads} />
           <Route path='/team' component={Team} />
           <Route path='/partners' component={Partners} />
-
+          
           <Contact />
           <Footer />
         </div>
