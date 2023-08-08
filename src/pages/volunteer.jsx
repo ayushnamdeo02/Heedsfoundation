@@ -3,6 +3,7 @@ import axios from 'axios';
 import './Volunteer/Volunteer.css';
 import volunteer_head from './assets/head.png';
 import { Helmet } from 'react-helmet';
+import emailjs from 'emailjs-com';
 
 class Volunteer extends Component {
   constructor(props) {
@@ -22,6 +23,9 @@ class Volunteer extends Component {
       dateOfBirthValid: true,
     };
   }
+  
+    
+  
 
   handleSubmit = async (e) => {
     e.preventDefault();
@@ -48,6 +52,29 @@ class Volunteer extends Component {
     if (!emailValid || !mobileNumberValid || !dateOfBirthValid) {
       alert('Please enter valid details.');
       return;
+    }
+
+    const templateParams = {
+      joinheedsfoundation: role,
+      to_email: emailid,
+      fullname: fullName,
+      gender: gender,
+      dob: dateOfBirth,
+      contact: contactNo,
+      address: address,
+      // Add more template parameters here if needed
+    };
+
+    try {
+      const response = await emailjs.send(
+        'volunteer',
+        'template_vol',
+        templateParams,
+        'kf4Jt-CYJzwGDc8vk'
+      );
+      console.log('Email sent successfully!', response);
+    } catch (error) {
+      console.error('Error sending email:', error);
     }
 
     const formData = {
