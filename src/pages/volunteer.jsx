@@ -106,6 +106,7 @@ class Volunteer extends Component {
 
       if (response.status === 201) {
         alert('Registration submitted successfully!');
+        
         this.setState({
           fullName: '',
           role: 'volunteer',
@@ -119,6 +120,7 @@ class Volunteer extends Component {
           mobileNumberValid: true,
           dateOfBirthValid: true,
         });
+        window.open('https://chat.whatsapp.com/JSrX40coNHb7EHSn556Wda', '_blank');
       } else {
         alert('Registration submission failed. Please try again.');
       }
@@ -159,10 +161,7 @@ class Volunteer extends Component {
     const isValid = selectedDate <= today;
     this.setState({ dateOfBirthValid: isValid });
   };
-  handleJoinWhatsAppGroup = () => {
-    // Open the WhatsApp group link in a new tab/window
-    window.open('https://chat.whatsapp.com/JSrX40coNHb7EHSn556Wda', '_blank');
-  };
+  
 
   render() {
     const {
@@ -289,7 +288,7 @@ class Volunteer extends Component {
               </select>
             </div>
 
-            <button type="submit" onClick={this.handleJoinWhatsAppGroup}>Submit</button>
+            <button type="submit">Submit</button>
           </div>
         </form>
       </div>
