@@ -1,42 +1,47 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  border-radius: 30%;
+}
+
 .navbar-container {
   max-width: 100%;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 10px;
-  margin-top: 10px;
+  padding: 0 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  margin-top: 5px;
   display: flex;
-  border-radius: 50px;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   background-image: url("../../images/backgroundlight.jpg");
-  background-size: cover; /* Adjust background size as needed */
+  background-size: cover;
   background-repeat: no-repeat;
+  border-radius: 30px;
 }
-.navbar-container .navbar-left {
-  display: flex;
-  justify-content: flex-start;
-}
+
 .navbar-container .navbar-left .navbar-brand img {
-  margin-left: 10px;
   width: 170px;
   height: auto;
 }
+
 .navbar-container .navbar-mid {
-  align-self: last baseline;
-  margin-left: 250px;
   display: flex;
   align-items: center;
-  flex-grow: 1;
-  justify-content: space-between;
   font-weight: 700;
 }
+
 .navbar-container .navbar-mid .menu-button {
   display: none;
   background: none;
   border: none;
   cursor: pointer;
-  margin-top: -50px;
-  margin-left: -40px;
 }
+
 .navbar-container .navbar-mid .menu-button span {
   display: block;
   width: 25px;
@@ -44,92 +49,91 @@
   background-color: #333;
   margin-bottom: 5px;
 }
+
 .navbar-container .navbar-mid .navbar-list {
   list-style: none;
   display: flex;
+  align-items: center;
 }
+
+.navbar-container .navbar-mid .navbar-list .nav-item {
+  margin: 0 15px;
+}
+
 .navbar-container .navbar-mid .navbar-list .nav-item .nav-link {
   text-decoration: none;
   color: #333;
 }
+
 .navbar-container .navbar-mid .navbar-list .nav-item .nav-link.active {
   font-weight: bold;
   color: red;
 }
-.navbar-container .navbar-right {
-  display: flex;
-  align-items: center;
-}
+
 .navbar-container .navbar-right .social-media-button {
   list-style: none;
   display: flex;
   margin: 0;
   padding: 0;
 }
+
 .navbar-container .navbar-right .social-media-button li {
   margin-right: 10px;
 }
+
 .navbar-container .navbar-right .social-media-button li a {
   text-decoration: none;
 }
-.navbar-container .navbar-right .social-media-button li a.linkedin img {
-  width: 30px;
-  height: 30px;
-}
-.navbar-container .navbar-right .social-media-button li a.instagram img {
-  width: 30px;
-  height: 30px;
-}
+
+.navbar-container .navbar-right .social-media-button li a.linkedin img,
+.navbar-container .navbar-right .social-media-button li a.instagram img,
 .navbar-container .navbar-right .social-media-button li a.twitter img {
   width: 30px;
   height: 30px;
 }
+
 @media (max-width: 480px) {
-  .navbar-container .navbar-left .navbar-brand img {
-    margin-left: 15px;
-    width: 150px;
-    height: auto;
-  }
   .navbar-container .navbar-mid {
-    margin-left: 160px;
-  }
-  .navbar-container .navbar-mid .menu-button {
-    display: block;
-  }
-  .navbar-container .navbar-mid .navbar-list {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     position: absolute;
-    top: 7%;
-    right: 0;
-    width: 50%;
+    top: 100%;
+    left: 0;
+    width: 100%;
     background-color: #f5f5f5;
     padding: 10px;
-    transform: none;
-    visibility: hidden;
+    transform: scaleY(0);
+    transition: transform 0.3s;
     z-index: 1;
-    visibility: hidden;
     opacity: 0;
-    transition: visibility 0s linear 0.3s, opacity 0.3s;
+    visibility: hidden;
   }
-  .navbar-container .navbar-mid .navbar-list.mobile-menu-open {
-    transform: none;
-    visibility: visible;
+
+  .navbar-container .navbar-mid.mobile-menu-open {
+    transform: scaleY(1);
     opacity: 1;
-    transition-delay: 0s;
+    visibility: visible;
   }
+
   .navbar-container .navbar-mid .navbar-list .nav-item {
-    margin-right: 0;
+    margin: 10px 0;
   }
+
   .navbar-container .navbar-mid .navbar-list .nav-item .nav-link {
     display: block;
     padding: 10px;
     border-bottom: 1px solid #ddd;
   }
+
   .navbar-container .navbar-mid .navbar-list .nav-item:last-child .nav-link {
     border-bottom: none;
   }
+
+  .navbar-container .navbar-mid .menu-button {
+    display: block;
+  }
+
   .navbar-container .navbar-right {
     display: none;
   }
-}/*# sourceMappingURL=Navbar.css.map */
+}

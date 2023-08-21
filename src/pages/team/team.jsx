@@ -11,6 +11,7 @@ import anish from "../assets/anish.jpg";
 import dhiraj from "../assets/dhiraj.jpg";
 import sudarshan from "../assets/sudarshan.jpg";
 import bahvesh from "../assets/bhavesh.jpg";
+import akshay from "../assets/akshay.jpg";
 
 class Team extends Component {
   render() {
@@ -129,6 +130,17 @@ class Team extends Component {
           linkedin: '/'
         }
       },
+      {
+        imageUrl: akshay,
+        name: "Mr.Akshay Bhandarwar",
+        position: "Web Master",
+        socialLinks: {
+          facebook: '/',
+          twitter: '/',
+          Instagram: '/',
+          linkedin: '/'
+        }
+      }
       // Add more card data objects
     ];
 

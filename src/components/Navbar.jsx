@@ -71,6 +71,9 @@ class Navbar extends Component {
                 Join Us
               </Link>
             </li>
+            <li className="nav-item">
+            <Link to="/learning-opportunities">Oppurtunities</Link>
+            </li>
           </ul>
         </div>
         <div className="navbar-right">

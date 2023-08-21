@@ -14,6 +14,7 @@ import Squads from './pages/squad';
 import Team from "./pages/team/team";
 import Partners from "./pages/partners/partners";
 import 'font-awesome/css/font-awesome.min.css';
+import LearningOpportunities from './components/LearningOpportunities';
 
 class App extends Component {
   render() {
@@ -35,6 +36,8 @@ class App extends Component {
           <Route path='/squad' component={Squads} />
           <Route path='/team' component={Team} />
           <Route path='/partners' component={Partners} />
+          <Route path="/learning-opportunities" component={LearningOpportunities} />
+
           
           <Contact />
           <Footer />
