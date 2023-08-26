@@ -107,7 +107,7 @@
     /* overflow: hidden;  */
   }
   .navbar-container .navbar-mid.mobile-menu-open {
-    transform: scaleY(1);
+    transform: none;
     opacity: 1;
     visibility: visible;
   }
