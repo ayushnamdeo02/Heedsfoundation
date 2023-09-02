@@ -134,6 +134,7 @@
   .container-contact .partition-contact .partition-right .contact-form form .social-media-button-contact li {
     width: 40px;
     height: 40px;
+    list-style: none;
   }
   .container-contact .partition-contact .partition-right .contact-form form .social-media-button-contact li img {
     width: 40px;
