@@ -71,13 +71,13 @@ class Contact extends Component {
             <img src={logo} alt="logo" />
             <div className="contact-info">
               <h6>Contact No.</h6>
-              <p>Mr. Pratik Meshram  +91 8788411441</p>
-              <p>Mr. Ayush Namdeo    +91 7987210406</p>
+              <p>Mr.Pratik Meshram  +91 8788411441</p>
+              <p>Mr.Ayush Namdeo    +91 7987210406</p>
               <p>Mr.Gaurav Borghare  +91 8208048191</p>
               <p>Mr.Shivam Sontakke  +91 8668353016</p>
               <p>Mr.Kartik Bhandari  +91 8118847746</p>
               <h6>Email ID</h6>
-              <p>heedsfoundation.ngo@gmail.com</p>
+             <p><a href="mailto:heedsfoundation.ngo@gmail.com?subject = Feedback&body = Message">heedsfoundation.ngo@gmail.com</a></p>
               <h6>Social Media Links:</h6>
               <ul className='social-media-button-contact'>
                 <li><a href="https://www.linkedin.com/company/heeds-foundation/" className='linkedin'><img src={linkedin} alt="LinkedIn" /></a></li>
