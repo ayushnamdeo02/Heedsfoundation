@@ -72,7 +72,9 @@ class Navbar extends Component {
               </Link>
             </li>
             <li className="nav-item">
-            <Link className="nav-link" to="/learning-opportunities">Opportunities</Link>
+             <Link className="nav-link" to="/learning-opportunities" onClick={this.handleLinkClick}>
+                Opportunities
+             </Link>
             </li>
           </ul>
         </div>
